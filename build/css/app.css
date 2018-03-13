@@ -1,0 +1,439 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "RobotoCondensed-Bold";
+  src: url("../fonts/RobotoCondensed-Bold.woff2") format("woff2"), url("../fonts/RobotoCondensed-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "robotocondensed-regular";
+  src: url("../fonts/robotocondensed-regular.woff2") format("woff2"), url("../fonts/robotocondensed-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "roboto-bold";
+  src: url("../fonts/roboto-bold.woff2") format("woff2"), url("../fonts/roboto-bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "roboto-light";
+  src: url("../fonts/roboto-light.woff2") format("woff2"), url("../fonts/roboto-light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "roboto-medium";
+  src: url("../fonts/roboto-medium.woff2") format("woff2"), url("../fonts/roboto-medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "roboto-regular";
+  src: url("../fonts/roboto-regular.woff2") format("woff2"), url("../fonts/roboto-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "roboto-thin";
+  src: url("../fonts/roboto-thin.woff2") format("woff2"), url("../fonts/roboto-thin.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5,
+h6, p, blockquote, pre, a, abbr, acronym, address, big,
+cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small,
+strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt,
+dd, ol, ul, li, fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td, article, aside, canvas, details,
+embed, figure, figcaption, footer, header, hgroup, menu, nav,
+output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+img, fieldset, a img {
+  border: none;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  -webkit-appearance: none;
+}
+
+input[type="submit"],
+button {
+  cursor: pointer;
+}
+
+input[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+textarea {
+  overflow: auto;
+}
+
+input, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+div, input, textarea, select, button,
+h1, h2, h3, h4, h5, h6, a, span, a:focus {
+  outline: none;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+@font-face {
+  font-family: "iconfont";
+  src: url("fonts/iconfont.eot");
+  src: url("fonts/iconfont.eot?#iefix") format("eot"), url("fonts/iconfont.woff2") format("woff2"), url("fonts/iconfont.woff") format("woff"), url("fonts/iconfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon {
+  font-family: "iconfont";
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: auto;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon {
+  display: inline-block;
+}
+
+.icon-facebook:before {
+  content: "";
+}
+
+.icon-phone:before {
+  content: "";
+}
+
+.icon-facebook {
+  width: 0.53em;
+  height: 1em;
+  fill: #000;
+}
+
+.icon-phone {
+  width: 1em;
+  height: 1em;
+  fill: initial;
+}
+
+.header {
+  position: fixed;
+  z-index: 50;
+  left: 0;
+  width: 100%;
+  top: 19px;
+  overflow: hidden;
+}
+
+.header__inner {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__menu, .header__phone {
+  position: relative;
+}
+
+.header__menu:before, .header__phone:before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 3000px;
+  z-index: -1;
+  top: 0;
+}
+
+.header__menu {
+  font-size: 0;
+  padding-left: 171px;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  margin-right: 15px;
+}
+
+.header__menu:before {
+  background: #017ec6;
+  right: 0;
+}
+
+.header__menu-item {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 55px;
+}
+
+.header__menu-item:last-of-type {
+  margin-right: 0;
+}
+
+.header__menu-item.is-active a:after, .header__menu-item:hover a:after {
+  opacity: 1;
+}
+
+.header__menu-item a {
+  color: #fff;
+  font-size: 24px;
+  font-family: 'robotocondensed-regular', sans-serif;
+  display: block;
+  padding: 17px 0 16px;
+  position: relative;
+}
+
+.header__menu-item a:after {
+  content: '';
+  position: absolute;
+  height: 4px;
+  background-color: #01af74;
+  left: -7px;
+  right: -10px;
+  bottom: 1px;
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+
+.header__phone {
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  padding: 12px 16px 13px 65px;
+  color: #fff;
+  font-size: 30px;
+  font-family: 'RobotoCondensed-Bold', sans-serif;
+  background: #01af74;
+  display: block;
+}
+
+.header__phone:before {
+  background: #017ec6;
+  -ms-transform: translateX(100%);
+  transform: translateX(100%);
+  right: -15px;
+}
+
+.header__phone i {
+  display: block;
+  font-size: 0;
+  line-height: 1;
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.header__phone svg {
+  fill: #fff;
+  width: 35px;
+  height: 35px;
+}
+
+.hero {
+  padding-top: 152px;
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-size: cover;
+  padding-bottom: 104px;
+  border-bottom: 5px solid #017ec6;
+  margin-bottom: 85px;
+}
+
+.hero__inner {
+  text-align: center;
+  max-width: 600px;
+}
+
+.hero__title {
+  margin-bottom: 75px;
+}
+
+.hero__btn {
+  margin-bottom: 98px;
+}
+
+.hero__text {
+  font-family: 'roboto-bold', sans-serif;
+  color: #013e61;
+  font-size: 30px;
+}
+
+.hero__text span {
+  display: block;
+  margin-top: 12px;
+  color: #01af74;
+  font-size: 36px;
+}
+
+.content-block {
+  padding-top: 140px;
+}
+
+.l {
+  position: relative;
+  max-width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+body {
+  background: #FFF;
+  font-weight: 300;
+  line-height: 1.2;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'roboto-light', sans-serif;
+  font-size: 20px;
+}
+
+.title-l, .title-m, .title-sm {
+  font-family: 'roboto-regular', sans-serif;
+}
+
+.title-hero {
+  font-family: 'roboto-bold', sans-serif;
+  font-size: 80px;
+  color: #013e61;
+  text-align: center;
+}
+
+.title-hero span {
+  display: block;
+  color: #017ec6;
+}
+
+.title-lg {
+  color: #017ec6;
+  font-family: 'RobotoCondensed-Bold', sans-serif;
+  font-size: 36px;
+  text-align: center;
+}
+
+.title-lg--d {
+  color: #013e61;
+}
+
+.title-lg--mb-48 {
+  margin-bottom: 48px;
+}
+
+.title-l {
+  color: #017ec6;
+  font-size: 28px;
+}
+
+.title-m {
+  color: #013e61;
+  font-size: 24px;
+}
+
+.title-m--fatter {
+  font-weight: 500;
+}
+
+.title-sm {
+  color: #013e61;
+  font-size: 20px;
+}
+
+.title-line {
+  position: relative;
+  margin-bottom: 35px;
+}
+
+.title-line:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 68px;
+  height: 2px;
+  background-color: #01af74;
+}
+
+.block {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.btn {
+  background: #01af74;
+  transition: all 0.2s ease;
+  font-size: 24px;
+  font-family: 'roboto-light', sans-serif;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  color: #fff;
+}
+
+.btn:hover {
+  background: #ed5f00;
+}
+
+.btn--big {
+  min-width: 360px;
+  font-family: 'roboto-regular', sans-serif;
+  font-size: 36px;
+  padding: 12px 15px;
+}
+
+/*# sourceMappingURL=app.css.map */

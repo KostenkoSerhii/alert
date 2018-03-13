@@ -1,0 +1,33 @@
+<!--begin prod-item-->
+<div class="prod-item {{itemMode}}">
+	<div class="prod-item__inner">
+
+		{% if item.difficult %}
+		<!--begin prod-item__left-->
+		<div class="prod-item__left">
+			{% endif %}
+
+			<div class="prod-item__img">
+				<img src="img/{{item.img}}.png" alt="alt">
+			</div>
+			{% if item.simpleText %}
+			<p class="prod-item__short-text">{{item.simpleText}}</p>
+			{% endif %}
+			{% if item.price %}
+			<p class="prod-item__price">{{item.price}}</p>
+			{% endif %}
+
+			{% if item.difficult %}
+		</div>
+		<!--end prod-item__left-->
+		<!--begin prod-item__right-->
+		<div class="prod-item__right">
+
+		</div>
+		<!--end prod-item__right-->
+		{% endif %}
+
+		
+	</div>
+</div>
+<!--end prod-item-->

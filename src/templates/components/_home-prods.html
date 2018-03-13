@@ -1,0 +1,16 @@
+<!--begin home-prods-->
+<div class="home-prods">
+	<!--begin l-->
+	<div class="l">
+		<h2 class="title-lg title-lg--mb-48">Alert1 Medical Alert Systems</h2>
+	</div>
+	<!--end l-->
+	<!--begin prod-list-->
+	<div class="prod-list">
+		{% for item in prodItems %}
+		{% include "components/_prod-item.html" %}
+		{% endfor %}
+	</div>
+	<!--end prod-list-->
+</div>
+<!--end home-prods-->

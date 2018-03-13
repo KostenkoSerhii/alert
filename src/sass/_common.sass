@@ -1,0 +1,69 @@
+
+=lg
+	@media only screen and (max-width: "1199px")
+		@content
+=l
+	@media only screen and (max-width: "1023px")
+		@content
+=m
+	@media only screen and (max-width: "991px")
+		@content
+=xs
+	@media only screen and (max-width: "767px")
+		@content
+
+
+
+a
+	text-decoration: none
+h1, h2, h3, h4, h5, h6
+	font-weight: normal
+body
+	background: #FFF
+	font-weight: 300
+	line-height: 1.2
+	+smooth-font
+	+rob-l
+	font-size: 20px
+
+.title-l, .title-m, .title-sm
+	+rob
+.title-hero
+	+rob-b
+	font-size: 80px
+	color: $blue-d
+	text-align: center
+	span
+		display: block
+		color: $blue
+.title-lg
+	color: $blue
+	+robc-b
+	font-size: 36px
+	text-align: center
+	&--d
+		color: $blue-d
+	&--mb-48
+		margin-bottom: 48px
+.title-l
+	color: $blue
+	font-size: 28px
+.title-m
+	color: $blue-d
+	font-size: 24px
+	&--fatter
+		font-weight: 500
+.title-sm
+	color: $blue-d
+	font-size: 20px
+.title-line
+	position: relative
+	margin-bottom: 35px
+	&:after
+		content: ''
+		position: absolute
+		left: 0
+		bottom: -10px
+		width: 68px
+		height: 2px
+		background-color: $green
