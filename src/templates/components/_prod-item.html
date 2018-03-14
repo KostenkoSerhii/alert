@@ -1,14 +1,13 @@
 <!--begin prod-item-->
 <div class="prod-item {{item.mode}}">
 
-
 	{% if item.difficult %}
 	<div class="prod-item__inner">
 		<!--begin prod-item__left-->
 		<div class="prod-item__left">
 			{% endif %}
 
-			<div class="prod-item__img">
+			<div class="prod-item__img {{item.imgMode}}">
 				<img src="img/{{item.img}}.png" alt="alt">
 			</div>
 			{% if item.simpleTitle %}
@@ -20,21 +19,27 @@
 			{% if item.price %}
 			<p class="prod-item__price">{{item.price}}</p>
 			{% endif %}
-			
+			{% if item.btn %}
+			<a href="#" class="btn prod-item__btn">{{item.btn}}</a>
+			{% endif %}
 			{% if item.difficult %}
 		</div>
 		<!--end prod-item__left-->
 		<!--begin prod-item__right-->
 		<div class="prod-item__right">
-
+			<h2 class="title-l prod-item__title">{{item.title}}</h2>
+			<p class="title-sm title-line">{{item.titleSec}}</p>
+			<div class="prod-item__text article">
+				{{item.text |safe}}
+			</div>
+			{% for globItem in item.list %}
+			{% include "components/_list.html" %}
+			{% endfor %}
 		</div>
 		<!--end prod-item__right-->
 	</div>
 	{% endif %}
 
-	{% if item.btn %}
-	<a href="#" class="btn prod-item__btn">{{item.btn}}</a>
-	{% endif %}
 </div>
 <!--end prod-item-->
 

@@ -55,10 +55,13 @@ body
 	color: $blue-d
 	font-size: 24px
 	&--fatter
-		font-weight: 500
+		+rob-m
 .title-sm
 	color: $blue-d
 	font-size: 20px
+	&--fatter
+		+rob-m
+		color: $black
 .title-line
 	position: relative
 	margin-bottom: 35px
@@ -131,6 +134,7 @@ body
 	line-height: 36px
 	&__inner
 		padding: 21px 0 28px
+		margin: 0 auto
 	a
 		color: $white
 		+robc-b
@@ -167,6 +171,8 @@ body
 		&--small
 			padding-right: 100px
 .list
+	.title-sm
+		margin-bottom: 10px
 	li
 		position: relative
 		padding-left: 20px
@@ -185,3 +191,24 @@ body
 	&--marg-small
 		li
 			margin-bottom: 10px
+.article
+	a
+		color: $blue
+		position: relative
+		// text-decoration: underline
+		border-bottom: 1px solid $blue
+		+trans
+		&:hover
+			border-color: transparent
+		// &:after
+		// 	content: ''
+		// 	position: absolute
+		// 	bottom: 1px
+		// 	height: 1px 
+		// 	+trans
+		// 	background: $blue
+		// 	left: 0
+		// 	width: 100%
+		// &:hover
+		// 	&:after
+		// 		opacity: 0

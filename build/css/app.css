@@ -433,12 +433,17 @@ body {
 }
 
 .title-m--fatter {
-  font-weight: 500;
+  font-family: 'roboto-medium', sans-serif;
 }
 
 .title-sm {
   color: #013e61;
   font-size: 20px;
+}
+
+.title-sm--fatter {
+  font-family: 'roboto-medium', sans-serif;
+  color: #000;
 }
 
 .title-line {
@@ -538,6 +543,7 @@ body {
 
 .line-block__inner {
   padding: 21px 0 28px;
+  margin: 0 auto;
 }
 
 .line-block a {
@@ -606,6 +612,10 @@ body {
   padding-right: 100px;
 }
 
+.list .title-sm {
+  margin-bottom: 10px;
+}
+
 .list li {
   position: relative;
   padding-left: 20px;
@@ -629,6 +639,17 @@ body {
 
 .list--marg-small li {
   margin-bottom: 10px;
+}
+
+.article a {
+  color: #017ec6;
+  position: relative;
+  border-bottom: 1px solid #017ec6;
+  transition: all 0.2s ease;
+}
+
+.article a:hover {
+  border-color: transparent;
 }
 
 .block {
@@ -764,8 +785,39 @@ body {
   padding: 10px 15px 9px;
 }
 
+.products .line-block {
+  margin-top: 91px;
+  margin-bottom: 3px;
+}
+
+.products .line-block__inner {
+  max-width: 955px;
+}
+
+.products .line-block + .prod-item {
+  border-top-color: transparent;
+}
+
 .prod-item {
   position: relative;
+}
+
+.prod-item:not(.prod-item--small) {
+  border-top: 2px solid whitesmoke;
+  margin-bottom: 43px;
+}
+
+.prod-item:not(.prod-item--small) .prod-item__text {
+  margin-bottom: 22px;
+}
+
+.prod-item:not(.prod-item--small) .prod-item__img {
+  margin-bottom: 49px;
+}
+
+.prod-item:not(.prod-item--small) .prod-item__img:after {
+  width: 31px;
+  bottom: -17px;
 }
 
 .prod-item--small {
@@ -822,6 +874,11 @@ body {
   margin-bottom: 28px;
 }
 
+.prod-item__img--spec-position img {
+  position: relative;
+  top: 40px;
+}
+
 .prod-item__img:after {
   content: '';
   position: absolute;
@@ -832,6 +889,7 @@ body {
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   bottom: -2px;
+  z-index: -1;
 }
 
 .prod-item__img img {
@@ -839,10 +897,41 @@ body {
   max-height: 241px;
 }
 
+.prod-item__inner {
+  *zoom: 1;
+}
+
+.prod-item__inner:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.prod-item__left {
+  float: left;
+  width: 360px;
+  text-align: center;
+}
+
+.prod-item__right {
+  padding-top: 44px;
+  padding-right: 95px;
+  float: right;
+  width: calc(100% - 390px);
+}
+
 .prod-item__title {
   font-family: 'roboto-regular', sans-serif;
   color: #017ec6;
   font-size: 28px;
+  margin-bottom: 7px;
+}
+
+.prod-item__price {
+  color: #017ec6;
+  font-size: 24px;
+  font-family: 'roboto-medium', sans-serif;
+  margin-bottom: 18px;
 }
 
 .prod-list {

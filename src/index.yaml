@@ -5,3 +5,5 @@ PageList:
   ready: 50%
 - file: product.html
   ready: 50%
+- file: products.html
+  ready: 50%
