@@ -11,7 +11,8 @@
 
 $icon-arrow-r: "\EA01";
 $icon-facebook: "\EA02";
-$icon-phone: "\EA03";
+$icon-medal: "\EA03";
+$icon-phone: "\EA04";
 
 
 %icon {
@@ -32,4 +33,5 @@ $icon-phone: "\EA03";
 
 .icon-arrow-r:before { content: $icon-arrow-r; }
 .icon-facebook:before { content: $icon-facebook; }
+.icon-medal:before { content: $icon-medal; }
 .icon-phone:before { content: $icon-phone; }

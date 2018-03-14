@@ -1,0 +1,11 @@
+<div class="user-block {{item.mode}}">
+	{% if item.title %}
+	<div class="user-block__rate-line">
+	<h4 class="title-m title-m--fatter user-block__spec-title">{{item.title}}</h4>
+		{% include "components/_star-rating.html" %}
+	</div>
+	{% endif %}
+	<p class="user-block__name">{{item.name}}</p>
+	<p class="user-block__text">{{item.text}}</p>
+	<p class="user-block__date">{{item.date}}</p>
+</div>

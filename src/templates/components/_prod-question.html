@@ -1,9 +1,12 @@
 <!--begin prod-question-->
 <div class="prod-question {{item.mode}}">
+	<div class="prod-question__inner">
 	<img src="img/{{item.img}}.jpg" alt="alt">
-	<h4 class="title-m title-m--fatter">{{item.title}}</h4>
+	<h4 class="title-m title-m--fatter prod-question__title">{{item.title}}</h4>
 	<div class="prod-question__text">
 		{{item.text | safe}}
+	</div>
+		
 	</div>
 </div>
 <!--end prod-question-->

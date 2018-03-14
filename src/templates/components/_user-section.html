@@ -1,0 +1,20 @@
+<!--begin user-section-->
+<div class="user-section">
+	<!--begin l-->
+	<div class="l">
+		<div class="user-section__inner">
+		{{userSection.title| safe}}
+		{% for item in userSection.userBlocks %}
+		{% include "components/_user-block.html" %}
+		{% endfor %}
+		<button class="btn btn--m user-section__btn">{{userSection.btn}}</button>
+		{% if userSection.moreLink %}
+		<div class="centered">
+			<a class="link-underline" href="#">{{userSection.moreLink}}</a>
+		</div>
+		{% endif %}
+		</div>
+	</div>
+	<!--end l-->
+</div>
+<!--end user-section-->

@@ -307,9 +307,63 @@ slides: [
 }
 questions: [
 {
-
+	title: 'Fall Detection Protection On The Go',
+	img: 'question-img1',
+	text: '<p>No phone? No problem. No base unit, cell phone, or landline phone is necessary with Kelsi Pro automatic fall detection systems.</p>
+	<p>Kelsi Pro uses a microphone and speaker to enable simple, 2-way communication to the Alert1 Command Center.</p>
+	<p>GPS, Wi-Fi, and cellular coverage is used in your mobile medical alert to find you if you don`t know where you are.</p>
+	<p>Automatic fall detection technology senses falls and automatically notifies the Command Center.</p>'
+},
+{
+	mode: 'prod-question--img-left',
+	title: 'What Is Mobile Fall Detection?',
+	img: 'question-img2',
+	text: '<p >Kelsi Pro provides mobile automatic fall detection. This GPS fall alert system contains sensors that are designed to differentiate between a fall and ordinary movements.</p>
+	<br><br>
+	<p>The mobile fall detection pendant is worn around your neck or clipped at the waist. If it senses a fall or you press the help button, you will be connected to a kind and compassionate US-based operator from an Alert1 Command Center.</p>'
+},
+{
+	title: 'What If I Don’t Know Where I Am?',
+	img: 'question-img3',
+	text: '<p>Once you press your mobile help button, we use GPS, Wi-Fi, and cellular coverage to locate you. We then alert your emergency responders so they can come to your aid.
+	</p><br><br><p>If your responders aren’t available, we will contact local 911 emergency services to help you. We stay on the line as you wait for emergency responders to help in your time of need.</p>'
 }
 ]
+userSection: {
+title: '<h2 class="title-lg">Reviews</h2>',
+moreLink: 'Show more',
+btn: 'Add a review',
+userBlocks: [
+{
+	mode: 'user-block--review',
+	title: 'Couldn`t ask for better service',
+	name: 'Phil (Findlay, OH)',
+	text: 'Once again Alert1 performed excellent. Mom fell again. They called the paramedics, then my brother then me just like we planned. Mom was ok this time but I couldn’t ask for better service from Alert1.',
+	date: 'Posted on 11/3/2017'
+},
+{
+	mode: 'user-block--review',
+	title: 'Couldn`t ask for better service',
+	name: 'Phil (Findlay, OH)',
+	text: 'Once again Alert1 performed excellent. Mom fell again. They called the paramedics, then my brother then me just like we planned. Mom was ok this time but I couldn’t ask for better service from Alert1.',
+	date: 'Posted on 11/3/2017'
+},
+{
+	mode: 'user-block--review',
+	title: 'Couldn`t ask for better service',
+	name: 'Phil (Findlay, OH)',
+	text: 'Once again Alert1 performed excellent. Mom fell again. They called the paramedics, then my brother then me just like we planned. Mom was ok this time but I couldn’t ask for better service from Alert1.',
+	date: 'Posted on 11/3/2017'
+},
+{
+	mode: 'user-block--review',
+	title: 'Couldn`t ask for better service',
+	name: 'Phil (Findlay, OH)',
+	text: 'Once again Alert1 performed excellent. Mom fell again. They called the paramedics, then my brother then me just like we planned. Mom was ok this time but I couldn’t ask for better service from Alert1.',
+	date: 'Posted on 11/3/2017'
+}
+]
+}
 ---
 {% extends "layouts/_layout.html" %}
 
@@ -422,13 +476,17 @@ questions: [
 <div class="prod-questions">
 	<!--begin l-->
 	<div class="l">
-		{% for item in questions %}
-		{% include "components/_prod-question.html" %}
-		{% endfor %}
+		<!--begin prod-questions-->
+		<div class="prod-questions__inner">
+			{% for item in questions %}
+			{% include "components/_prod-question.html" %}
+			{% endfor %}
+		</div>
+		<!--end prod-questions-->
 	</div>
-<!--end l-->
+	<!--end l-->
 </div>
 <!--end prod-questions-->
-
+{% include "components/_user-section.html" %}
 <!--end content-block product-page-->
 {% endblock %}

@@ -47,12 +47,27 @@
 		margin: 0 15px
 		cursor: pointer
 .prod-rating
+	margin-bottom: 50px
+	font-size: 0
+	&__count, &__text
+		display: inline-block
+		vertical-align: top
 	&__count
+		+rob
+		font-size: 18px
+		margin-right: 71px
+		padding-top: 2px
 	&__text
+		+robc-b
+		font-size: 24px
+		color: $green
+		padding-bottom: 2px
+	.star-ratings
+		margin-right: 10px
 .prod-form
 	max-width: 555px
 	&__text
-		margin-bottom: 21px
+		margin-bottom: 17px
 	&__line
 		font-size: 0
 		padding-top: 6px
@@ -108,3 +123,29 @@
 	padding-top: 66px
 	.list
 		margin-bottom: 58px
+.prod-questions
+	margin-bottom: 51px
+	&__inner
+		padding-left: 98px
+.prod-question
+	margin-bottom: 28px
+	&__inner
+		+clr
+	&__title
+		margin-bottom: 28px
+		padding-top: 10px
+	&__text
+		p
+			margin-bottom: 15px
+	img
+		max-width: 262px
+		max-height: 328px
+		height: auto
+		float: right
+		margin-bottom: 10px
+		margin-left: 30px
+	&--img-left
+		img
+			float: left
+			margin-left: 0
+			margin-right: 30px

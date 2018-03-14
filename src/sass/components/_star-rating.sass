@@ -1,14 +1,18 @@
 .star-ratings
-	background: url("../img/stars-empty.png") repeat-x
+	// background: url("../img/stars-empty.png") repeat-x
+	+s(stars-empty)
 	font-size: 0
-	height: 12px
+	height: 22px
 	line-height: 0
 	overflow: hidden
 	text-indent: -999em
-	width: 82px
+	width: 144px
+	display: inline-block
+	vertical-align: top
 	&__full
-		background: url("../img/stars-full.png") repeat-x
-		background-position: 0 100%
-		float: left
-		height: 12px
+		// background: url("../img/stars-full.png") repeat-x
+		+s(stars-full)
+		// background-position: 0 100%
+		// float: left
+		height: 22px
 		display: block
