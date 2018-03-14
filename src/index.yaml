@@ -7,3 +7,5 @@ PageList:
   ready: 50%
 - file: products.html
   ready: 50%
+- file: prices.html
+  ready: 50%

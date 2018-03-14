@@ -1,0 +1,96 @@
+---
+title: prices
+prodItems: [
+{
+	mode: 'prod-item--compare',
+	difficult: false,
+	img: 'prod-img-5',
+	btn: 'See details',
+	price: '19.95',
+	simpleTitle: 'Home'
+}
+]
+compareOptions: [
+{
+	mode: 'compare__option--big',
+	text: 'Choose Your System'
+},
+{
+	text: 'Monthly Rate <br> with Annual Plan'
+},
+{
+	text: 'No Landline  <br>  Required'
+},
+{
+	text: '24/7 Command <br> Center Protection'
+},
+{
+	text: 'Unlimited Button <br> Pushes'
+},
+{
+	text: 'Free Equipment <br> Use'
+},
+{
+	text: 'Works In & Around <br> Home'
+},
+{
+	text: 'Coverage In All 50 <br> States'
+},
+{
+	text: 'Call 911, Family <br> or Friends'
+},
+{
+	text: 'Works On-The-Go'
+},
+{
+	text: 'Fall Detection'
+},
+{
+	text: 'Speaker in the <br> Button'
+}
+]
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+<!--begin content-block prices-->
+
+<div class="content-block prices">
+	<!--begin l-->
+	<div class="l">
+		<h1 class="title-lg title-lg--mb-33">Medical Alert Systems Pricing</h1>
+		<!--begin compare-->
+		<div class="compare">
+			<div class="compare__nav">
+				<span>Show Plans:</span>
+				<a class="is-active" href="#">Annual</a>
+				<a href="#">Semi-annual</a>
+				<a href="#">Quarterly</a>
+			</div>
+			<!--begin compare__inner-->
+			<div class="compare__inner">
+				<div class="compare__options-col">
+					{% for item in compareOptions %}
+					<div class="compare__option {{item.mode}}">
+						{{item.text | safe}}
+					</div>
+					{% endfor %}
+				</div>
+				<!--begin compare__content-->
+				<div class="compare__content">
+					<div class="compare__list">
+						{% for item in prodItems %}
+						{% include "components/_prod-item.html" %}
+						{% endfor %}
+					</div>
+				</div>
+				<!--end compare__content-->
+			</div>
+			<!--end compare__inner-->
+		</div>
+		<!--end compare-->
+	</div>
+	<!--end l-->
+</div>
+<!--end content-block prices-->
+{% endblock %}

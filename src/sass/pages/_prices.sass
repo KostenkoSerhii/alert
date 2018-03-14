@@ -1,0 +1,46 @@
+.compare
+	&__nav
+		display: flex
+		align-items: center
+		justify-content: center
+		padding-bottom: 18px
+		border-bottom: 1px solid $green
+		margin-bottom: 42px
+		a, span
+			margin:  0 30px
+		span
+			color: $blue
+		a
+			font-size: 24px
+			+rob-m
+			color: $blue-d
+			+trans
+			position: relative
+			&:after
+				content: ''
+				position: absolute
+				width: 100%
+				height: 2px
+				background: $green
+				opacity: 0
+				+trans
+				left: 0
+				bottom: -5px
+			&:hover, &.is-active
+				color: $green
+				&:after
+					opacity: 1
+	&__inner
+		+clr
+	&__options-col
+		float: left
+		width: 180px
+		padding-right: 15px
+	&__option
+		color: $blue-d
+		&--big
+			font-size: 24px
+	&__content
+		float: right
+		width: calc(100% - 180px)
+		overflow-x: auto
