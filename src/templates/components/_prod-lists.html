@@ -1,0 +1,22 @@
+<!--begin prod-lists-->
+<div class="prod-lists">
+	<!--begin l-->
+	<div class="l">
+		<h2 class="title-lg title-lg--mb-48">Kelsi Pro On-the-Go Fall Detection Technology Features</h2>
+		<div class="two-col ">
+			<div class="two-col__left">
+				{% for globItem in listsLeft %}
+				{% include "components/_list.html" %}
+				{% endfor %}
+			</div>
+			<div class="two-col__right">
+				{% for globItem in listsRight %}
+				{% include "components/_list.html" %}
+				{% endfor %}
+			</div>
+		</div>
+		<!--end two-col-->
+	</div>
+	<!--end l-->
+</div>
+<!--end prod-lists-->

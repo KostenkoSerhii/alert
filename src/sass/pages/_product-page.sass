@@ -1,0 +1,110 @@
+.prod-page
+	&__top
+		+clr
+		margin-bottom: 55px
+	&__slider-side
+		width: percentage(360 / 1140)
+		float: left
+		padding-top: 8px
+	&__desrc-side
+		width: percentage(652 / 1140)
+		float: right
+	&__help-block
+		font-size: 24px
+		p
+			margin-bottom: 5px
+		a
+			font-size: 30px
+			color: $blue
+			+rob-m
+	&__title
+		text-align: left
+		margin-bottom: 5px
+	&__two-col
+		margin-bottom: 80px
+.prod-main-slider
+	margin-bottom: 19px
+	font-size: 0
+	&__slide
+		height: 283px
+		img
+			object-fit: cover
+			width: 100%
+			height: 100%
+.prod-nav-slider
+	font-size: 0
+	margin-bottom: 60px
+	&__slide
+		width: 67px
+		height: 64px
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+	.slick-slide 
+		+trans
+		width: 67px!important
+		margin: 0 15px
+		cursor: pointer
+.prod-rating
+	&__count
+	&__text
+.prod-form
+	max-width: 555px
+	&__text
+		margin-bottom: 21px
+	&__line
+		font-size: 0
+		padding-top: 6px
+		&--btn
+			text-align: right
+		.prod-form__block
+			&:last-of-type
+				margin-right: 0
+	&__block
+		width: 164px
+		display: inline-block
+		vertical-align: top
+		margin-right: 30px
+		margin-bottom: 33px
+		label
+			display: block
+			height: 55px
+			background-color: $white
+			border: 1px solid $blue-d
+			+trans
+			color: $blue
+			+rob-m
+			text-align: center
+			cursor: pointer
+			+vertical
+			&:hover
+				background: $blue-d
+				color: $white
+		span
+			display: inline-block
+			vertical-align: middle
+			font-size: 20px
+		input
+			display: none
+			&:checked + label
+				background: $blue-d
+				color: $white
+	&__price
+		min-height: 75px
+		display: flex
+		align-items: center
+		justify-content: center
+		flex-wrap: wrap
+		padding: 10px 5px
+		border-left: 1px solid $blue
+		border-right: 1px solid $blue
+		border-bottom: 1px solid $blue
+		color: $blue
+		font-size: 20px
+		p
+			color: $green
+.prod-lists
+	padding-top: 66px
+	.list
+		margin-bottom: 58px

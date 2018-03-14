@@ -21,5 +21,25 @@ function sliders(){
 		responsive: [
 		]
 	});
+
+	$('.js-main-prod-slider').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		infinite: true,
+		asNavFor: '.js-nav-prod-slider',
+		arrows: false,
+	});
+	$('.js-nav-prod-slider').slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		infinite: true,
+		asNavFor: '.js-main-prod-slider',
+    // dots: true,
+    arrows: false,
+    centerMode: false,
+    focusOnSelect: true,
+    variableWidth: true,
+
+  });
 }
 module.exports = sliders;

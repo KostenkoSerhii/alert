@@ -1,0 +1,13 @@
+<!--begin drop-block -->
+<div class="drop-block  js-drop-block {{item.dropBlockMode}}">
+	<div class="drop-block__title js-drop-block-toggler">
+		<i class="drop-block__icon">{{mixins.icon('arrow-r')}}</i>
+		<p class="title-m">{{item.title}}</p>
+	</div>
+	<div class="drop-block__content js-drop-block-content">
+		{% for globItem in item.list %}
+		{% include "components/_list.html" %}
+		{% endfor %}
+	</div>
+</div>
+<!--end drop-block -->

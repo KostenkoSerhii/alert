@@ -1,8 +1,8 @@
-<section class="section section--border-top">
+<section class="section section--border-top {{howWork.sectionMode}}">
 	<!--begin l-->
 	<div class="l">
 		{% if howWork.title %}
-		<h2 class="title-lg section__title">{{howWork.title}}</h2>
+		<h2 class="title-lg section__title {{howWork.titleMode}}">{{howWork.title}}</h2>
 		{% endif %}
 		<div class="how-work">
 			{% for item in howWork.list %}

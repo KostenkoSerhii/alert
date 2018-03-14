@@ -1,11 +1,11 @@
-		<!--begin line-block-->
-		<div class="line-block {{lineBlock.mode}}">
-			<!--begin l-->
-			<div class="l">
-				{{lineBlock.text | safe}}
-			</div>
-			<!--end l-->
-
+<!--begin line-block-->
+<div class="line-block {{lineBlock.mode}}">
+	<!--begin l-->
+	<div class="l">
+		<div class="line-block__inner">
+			{{lineBlock.text | safe}}
 		</div>
-		<!--end line-block-->
-		
+	</div>
+	<!--end l-->
+</div>
+<!--end line-block-->

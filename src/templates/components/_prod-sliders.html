@@ -1,0 +1,43 @@
+				<div class="prod-main-slider js-main-prod-slider">
+					{% set prodMainSlider = [
+						{
+							img: 'prod-main-img'
+						},
+						{
+							img: 'prod-main-img'
+						},
+						{
+							img: 'prod-main-img'
+						},
+						{
+							img: 'prod-main-img'
+						}
+						] %}
+						{% for item in prodMainSlider %}
+						<div class="prod-main-slider__slide">
+							<img src="img/{{item.img}}.jpg" alt="alt">
+						</div>
+						{% endfor %}
+					</div>
+					<div class="prod-nav-slider js-nav-prod-slider">
+						
+						{% set prodNavSlider = [
+							{
+								img: 'prod-nav-img1'
+							},
+							{
+								img: 'prod-nav-img2'
+							},
+							{
+								img: 'prod-nav-img1'
+							},
+							{
+								img: 'prod-nav-img2'
+							}
+							] %}
+							{% for item in prodNavSlider %}
+							<div class="prod-nav-slider__slide">
+								<img src="img/{{item.img}}.jpg" alt="alt">
+							</div>
+							{% endfor %}
+						</div>

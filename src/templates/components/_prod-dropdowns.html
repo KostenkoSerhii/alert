@@ -1,0 +1,23 @@
+<!--begin dropdowns-section-->
+<div class="dropdowns-section">
+	<!--begin l-->
+	<div class="l">
+		<h2 class="title-lg title-lg--mb-48">Kelsi Pro Fall Detection Technical Specifications</h2>
+		<!--begin dropdowns-section__inner-->
+		<div class="dropdowns-section__inner">
+			<div class="dropdowns-section__left">
+				<img src="img/drop-img.png" alt="alt">
+			</div>
+			<!--begin dropdowns-section__right-->
+			<div class="dropdowns-section__right">
+				{%  for item in dropBLocks %}
+				{% include "components/_drop-block.html" %}
+				{% endfor %}
+			</div>
+			<!--end dropdowns-section__right-->
+		</div>
+		<!--end dropdowns-section__inner-->
+	</div>
+	<!--end l-->
+</div>
+<!--end dropdowns-section-->

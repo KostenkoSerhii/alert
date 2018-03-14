@@ -66,7 +66,7 @@ body
 		content: ''
 		position: absolute
 		left: 0
-		bottom: -10px
+		bottom: -17px
 		width: 68px
 		height: 2px
 		background-color: $green
@@ -79,6 +79,8 @@ body
 		border-bottom: 1px solid $blue
 	&--big-padding-bottom
 		padding-bottom: 66px
+	&--small-padding-bottom
+		padding-bottom: 37px
 	&--mb
 		margin-bottom: 75px
 	&--text
@@ -119,7 +121,7 @@ body
 .centered
 	text-align: center
 .line-block
-	padding: 21px 0 28px
+	
 	text-align: center
 	background: $blue
 	margin-bottom: 40px
@@ -127,12 +129,29 @@ body
 	color: $white
 	font-size: 30px
 	line-height: 36px
-	&--mb-big
-		margin-bottom: 81px
+	&__inner
+		padding: 21px 0 28px
 	a
 		color: $white
 		+robc-b
 		font-size: 36px
+	&--mb-big
+		margin-bottom: 81px
+	&--mb-m
+		margin-bottom: 60px
+	&--mb-none
+		margin-bottom: 0
+	&--dashed
+		color: $blue-d
+		background: none
+		font-size: 36px
+		+robc-b
+		.line-block__inner
+			border: 3px dashed $green
+			padding: 21px 0
+		a
+			color: $blue-d
+.dashed-line-block
 .two-col
 	+clr
 	&__left, &__right
@@ -163,3 +182,6 @@ body
 			height: 10px
 			border-radius: 50%
 			background: $green
+	&--marg-small
+		li
+			margin-bottom: 10px

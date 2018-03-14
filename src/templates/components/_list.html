@@ -1,7 +1,7 @@
 		<!--begin list-->
-		<div class="list">
+		<div class="list {{globItem.listMode}}">
 			{% if globItem.listTitle %}
-			{{listTitle| safe}}
+			{{globItem.listTitle| safe}}
 			{% endif %}
 			<ul>
 				{% for item in globItem.listItems %}
