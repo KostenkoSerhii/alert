@@ -1,0 +1,13 @@
+		<!--begin list-->
+		<div class="list">
+			{% if globItem.listTitle %}
+			{{listTitle| safe}}
+			{% endif %}
+			<ul>
+				{% for item in globItem.listItems %}
+				<li>{{item.text |safe}}</li>
+				{% endfor %}
+			</ul>
+		</div>
+		<!--end list-->
+		

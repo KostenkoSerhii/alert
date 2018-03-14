@@ -1,0 +1,15 @@
+<!--begin art-item-->
+<div class="art-item {{item.mode}}">
+	<div class="art-item__inner">
+		<div class="art-item__img">
+			<img src="img/{{item.img}}.jpg" alt="alt">
+			<div class="art-item__date">{{item.date | safe}}</div>
+		</div>
+		<div class="art-item__descr">
+			<h4 class="title-m art-item__title">{{item.title}}</h4>
+			<div class="art-item__text">{{item.text}}</div>
+			<a class="link-more art-item__more" href="#">Read more...</a>
+		</div>
+	</div>
+</div>
+<!--end art-item-->

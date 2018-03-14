@@ -1,0 +1,21 @@
+<!--begin articles-section-->
+<div class="art-section">
+	<!--begin l-->
+	<div class="l">
+		<h2 class="title-lg title-lg--mb-48">{{artSection.title}}</h2>
+		<!--begin art-section__list-->
+		<div class="art-section__list">
+			{% for item in artSection.articles %}
+			{% include "components/_article-item.html" %}
+			{% endfor %}
+		</div>
+		<!--end art-section__list-->
+		{% if artSection.bottomBtn %}
+		<div class="centered">
+			<a class="link-underline" href="#">{{artSection.bottomBtn}}</a>
+		</div>
+		{% endif %}
+	</div>
+	<!--end l-->
+</div>
+<!--end articles-section-->

@@ -19,7 +19,8 @@ a
 h1, h2, h3, h4, h5, h6
 	font-weight: normal
 body
-	background: #FFF
+	background: $white
+	color: $black
 	font-weight: 300
 	line-height: 1.2
 	+smooth-font
@@ -45,6 +46,8 @@ body
 		color: $blue-d
 	&--mb-48
 		margin-bottom: 48px
+	&--mb-33
+		margin-bottom: 33px
 .title-l
 	color: $blue
 	font-size: 28px
@@ -67,3 +70,96 @@ body
 		width: 68px
 		height: 2px
 		background-color: $green
+.section
+	background: $blue-l
+	padding: 42px 0 54px
+	&--border-top
+		border-top: 1px solid $blue
+	&--border-bottom
+		border-bottom: 1px solid $blue
+	&--big-padding-bottom
+		padding-bottom: 66px
+	&--mb
+		margin-bottom: 75px
+	&--text
+		padding-top: 45px
+		padding-bottom: 43px
+		font-size: 18px
+	&__title
+		margin-bottom: 50px
+		&--mb-big
+			margin-bottom: 61px
+.link-underline
+	color: $blue
+	font-size: 24px
+	position: relative
+	&:after
+		content: ''
+		position: absolute
+		width: 100%
+		height: 1px 
+		background: $blue
+		left: 0
+		bottom: -2px
+		+trans
+	&:hover
+		&:after
+			opacity: 0
+.link-more
+	color: $blue
+	display: inline-block
+	vertical-align: top
+	// position: relative
+	// padding-right: 10px
+	// &:after
+	// 	content: '...'
+	// 	position: absolute
+	// 	bottom: 0
+	// 	right: 0
+.centered
+	text-align: center
+.line-block
+	padding: 21px 0 28px
+	text-align: center
+	background: $blue
+	margin-bottom: 40px
+	+robc
+	color: $white
+	font-size: 30px
+	line-height: 36px
+	&--mb-big
+		margin-bottom: 81px
+	a
+		color: $white
+		+robc-b
+		font-size: 36px
+.two-col
+	+clr
+	&__left, &__right
+		width: 50%
+	&__left
+		float: left
+		padding-right: 15px
+		&--small
+			padding-left: 100px
+	&__right
+		float: right
+		padding-left: 15px
+		&--small
+			padding-right: 100px
+.list
+	li
+		position: relative
+		padding-left: 20px
+		margin-bottom: 20px
+		&:last-of-type
+			margin-bottom: 0
+		&:before
+			content: ''
+			position: absolute
+			left: 0
+			top: 8px
+			width: 10px
+			height: 10px
+			border-radius: 50%
+			background: $green

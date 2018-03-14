@@ -1,0 +1,37 @@
+		<!--begin why-we-->
+		<div class="why-we">
+			<!--begin l-->
+			<div class="l">
+				<h2 class="title-lg title-lg--mb-33">
+					Why our members chose Alert1
+				</h2>
+				<div class="why-we__text">
+					The Alert1 medical alert system includes everything you need to begin receiving 24-hour emergency protection in your home today.
+				</div>
+				<!--begin why-we__inner-->
+				<div class="why-we__inner">
+					<!--begin two-col-->
+					<div class="two-col">
+						<div class="two-col__left two-col__left--small">
+							{% for globItem in listLeft %}
+							{% include "components/_list.html" %}
+							{% endfor %}
+						</div>
+						<div class="two-col__right two-col__right--small">
+							{% for globItem in listRight %}
+							{% include "components/_list.html" %}
+							{% endfor %}
+						</div>
+					</div>
+					<!--end two-col-->
+
+				</div>
+				<!--end why-we__inner-->
+
+			</div>
+			<!--end l-->
+
+
+		</div>
+		<!--end why-we-->
+		

@@ -1,0 +1,26 @@
+<section class="section  section--border-top section--border-bottom section--big-padding-bottom section--mb">
+	<!--begin l-->
+	<div class="l">
+		{% if slider.title %}
+		<h2 class="title-lg section__title section__title--mb-big">{{slider.title}}</h2>
+		{% endif %}
+		<div class="slider js-slider">
+
+				{% for slide in slider.slides %}
+				<div class="slider__slide slide">
+					<div class="slider__img">
+						<img src="img/{{slide.img}}.jpg" alt="alt">
+					</div>
+					<div class="slider__text-side">
+						<p class="slider__title">{{slide.title}}</p>
+						<div class="slider__text">
+							{{slide.text}}
+						</div>
+					</div>
+				</div>
+				{% endfor %}
+
+		</div>
+	</div>
+	<!--end l-->
+</section>

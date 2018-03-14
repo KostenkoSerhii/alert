@@ -2,14 +2,194 @@
 title: Index page
 prodItems: [
 {
-
+	mode: 'prod-item--small',
+	difficult: false,
+	img: 'prod-img-1',
+	simpleTitle: 'Home',
+	simpleText: 'Landline required',
+	btn: 'Learn more'
+},
+{
+	mode: 'prod-item--small',
+	difficult: false,
+	img: 'prod-img-2',
+	simpleTitle: 'Home Fall Detection',
+	simpleText: 'Landline required',
+	btn: 'Learn more'
+},
+{
+	mode: 'prod-item--small',
+	difficult: false,
+	img: 'prod-img-3',
+	simpleTitle: 'On-the-Go',
+	simpleText: 'Landline required',
+	btn: 'Learn more'
+},
+{
+	mode: 'prod-item--small',
+	difficult: false,
+	img: 'prod-img-4',
+	simpleTitle: 'On-the-Go Fall Detection',
+	simpleText: 'Landline required',
+	btn: 'Learn more'
+},
+{
+	mode: 'prod-item--small',
+	difficult: false,
+	img: 'prod-img-5',
+	simpleTitle: 'On-the-Go + Home Fall Detection',
+	simpleText: 'Landline required',
+	btn: 'Learn more'
+},
+]
+howWork: {
+title: 'How it works',
+btn: 'See medical alert system pricing',
+list: [
+{
+	img: 'how-work-touch',
+	nubmer: '1',
+	title: 'Press',
+	text: 'In the event of an emergency, simply press the red button on your Alert1 pendant, bracelet, wireless room button, or base unit.',
+	arrow: 'how-work-arr1'
+},
+{
+	img: 'how-work-manager',
+	nubmer: '2',
+	title: 'Respond',
+	text: 'Within moments, an operator at our US-based emergency response center is on the line, ready to help.',
+	arrow: 'how-work-arr2',
+	arrowMode: 'how-work-item__arrow--top'
+},
+{
+	img: 'how-work-car',
+	nubmer: '3',
+	title: 'Help',
+	text: 'Our operator assesses the situation and contacts emergency services, or a loved one. Even if you can’t speak, we make sure you get help.'
 }
 ]
+}
+lineBlock: {
+mode: 'line-block--mb-big',
+text: 'Call us today at <a href="tel:1-877-959-8354">1-877-959-8354</a> to get peace of mind with Alert1'
+}
+
+listLeft: [
+{
+	listItems: [
+	{
+		text: '<strong>Highly rated</strong> on Consumer Affairs'
+	},
+	{
+		text: '<strong>Stay on the phone</strong> until help arrives'
+	},
+	{
+		text: '<strong>24/7 monitoring</strong> with multiple monitoring centers'
+	},
+	{
+		text: '<strong>30 Day</strong> Refund Policy*'
+	},
+	{
+		text: '<strong>Affordable pricing</strong>'
+	},
+	{
+		text: '<strong>No long-term contracts</strong> required'
+	}
+	]
+}
+]
+listRight: [
+{
+	listItems: [
+	{
+		text: '<strong>A+ rating</strong> with the Better Business Bureau'
+	},
+	{
+		text: '<strong>Works in your area</strong>—service in all 50 states'
+	},
+	{
+		text: '<strong>No high-pressure</strong> sales tactics'
+	},
+	{
+		text: 'Highly trained, <strong>US-based emergency operators</strong>'
+	},
+	{
+		text: '<strong>Unlimited</strong> talk time and button pushes'
+	},
+	{
+		text: '<strong>Personalized</strong> emergency response'
+	}
+	]
+}
+]
+slider: {
+title: 'Feedback from our customers',
+slides: [
+{
+	img: 'slider-img',
+	title: 'DeeDee — AR',
+	text: 'After researching many "help" systems for my parents, we chose Alert1. It was the best decision we ever made! I cannot express how wonderful the people are and the caring manner in which they treat you. Trust me when I say that Alert1 gives us total Peace of Mind!'
+},
+{
+	img: 'slider-img',
+	title: 'DeeDee — AR',
+	text: 'After researching many "help" systems for my parents, we chose Alert1. It was the best decision we ever made! I cannot express how wonderful the people are and the caring manner in which they treat you. Trust me when I say that Alert1 gives us total Peace of Mind!'
+}
+]
+}
+artSection: {
+title: 'Recent Blog Posts',
+bottomBtn: 'Read blog',
+articles: [
+{
+	mode: 'art-item--small',
+	img: 'article-img',
+	date: '<strong>06</strong> JAN',
+	title: 'Annjuncing the winner of the 
+	2017 Alert1 student for seniors 
+	scholarship',
+	text: "Announcing the winner of our Students for Seniors Scholarship, Amanda! You'll want to read her touching stories about the seniors in her life."
+},
+{
+	mode: 'art-item--small',
+	img: 'article-img',
+	date: '<strong>06</strong> JAN',
+	title: 'Annjuncing the winner of the 
+	2017 Alert1 student for seniors 
+	scholarship',
+	text: "Announcing the winner of our Students for Seniors Scholarship, Amanda! You'll want to read her touching stories about the seniors in her life."
+},
+{
+	mode: 'art-item--small',
+	img: 'article-img',
+	date: '<strong>06</strong> JAN',
+	title: 'Annjuncing the winner of the 
+	2017 Alert1 student for seniors 
+	scholarship',
+	text: "Announcing the winner of our Students for Seniors Scholarship, Amanda! You'll want to read her touching stories about the seniors in her life."
+}
+]
+}
+
 ---
 {% extends "layouts/_layout.html" %}
 
 {% block content %}
 {% include "components/_hero.html" %}
 {% include "components/_home-prods.html" %}
+{% include "components/_how-work.html" %}
+{% include "components/_line-block.html" %}
+{% include "components/_why-we.html" %}
+{% include "components/_slider.html" %}
+{% include "components/_articles-section.html" %}
+<section class="section section--text">
+	<!--begin l-->
+	<div class="l">
+		<p>	*Promotion only applies to select plans. Alert1 offers multiple payment plans so you can choose the service that best meets your needs for price and flexibility. Our members are never locked into a multi-year contract. You may cancel your service at any time, without any cancellation charges. To qualify for a refund, new members must subscribe to an annual or a semi-annual service plan, use the medical alert device to place a successful test call to the Command Center and return the device in its original condition within 30 days of initial purchase. Any pre-paid shipping, warranty and activation fees are non-refundable.</p>
+		<p>**Alert1 and Modern Senior Magazine are wholly owned and operated by ResponseLINK, LLC.</p>
+	</div>
+	<!--end l-->
+
+</section>
 
 {% endblock %}

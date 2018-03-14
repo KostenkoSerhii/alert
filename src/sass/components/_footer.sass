@@ -1,0 +1,29 @@
+.footer
+	background: $green
+	padding: 22px 0 16px
+	overflow: hidden
+	text-align: center
+	&__top
+		+robc-b
+		font-size: 30px
+		color: $white
+		padding-bottom: 20px
+		position: relative
+		margin-bottom: 22px
+		&:before
+			content: ''
+			position: absolute
+			width: 10000px
+			height: 1px
+			left: 50%
+			transform: translateX(-50%) 
+			background: $blue
+			bottom: 0
+		p
+			margin-bottom: 15px
+	&__bottom
+		+rob-l
+		font-size: 14px
+		color: $black
+		a
+			color: $black

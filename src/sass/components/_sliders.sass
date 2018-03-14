@@ -1,0 +1,51 @@
+.btn-next, .btn-prev
+	cursor: pointer
+	display: inline-block
+	vertical-align: top
+	line-height: 1
+	position: absolute
+	top: 50%
+	transform: translateY(-50%)
+	svg
+		height: 36px
+		fill: $blue
+		+trans
+		&:hover
+			fill: $blue-d
+.btn-next
+	right: 2px
+.btn-prev
+	left: 2px
+.slider
+	max-width: 1050px
+	padding: 0 50px
+	margin: 0 auto
+	&__slide
+		+clr
+	&__img
+		width: 262px
+		float: left
+		img
+			max-width: 100%
+			max-height: 270px
+			height: auto
+	&__text-side
+		float: right
+		width: calc(100% - 292px)
+		padding-top: 18px
+	&__title
+		color: $blue-d
+		font-size: 24px
+		+rob-m
+		display: inline-block
+		vertical-align: top
+		margin-bottom: 44px
+		position: relative
+		&:before
+			content: ''
+			position: absolute
+			width: 210px
+			height: 2px
+			background: $green
+			bottom: -9px
+			right: -24px

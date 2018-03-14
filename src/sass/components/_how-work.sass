@@ -1,0 +1,52 @@
+.how-work
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+.how-work-item
+	flex-basis: 360px
+	flex-grow: 0
+	flex-shrink: 1
+	margin-right: 30px
+	position: relative
+	margin-bottom: 60px
+	&:nth-of-type(3n)
+		margin-right: 0
+	&__img
+		width: 166px
+		height: 166px
+		margin: 0 auto 11px
+		border-radius: 50%
+		border: 2px dashed $blue
+		position: relative
+		img
+			max-width: 125px
+			max-height: 107px
+			position: absolute
+			top: 46%
+			left: 50%
+			transform: translate(-50%, -50%)
+	&__number
+		width: 37px
+		height: 37px
+		border-radius: 50%
+		background: $green
+		+rob-b
+		font-size: 30px
+		text-align: center
+		position: absolute
+		bottom: 0
+		left: 11px
+		color: $white
+	&__title
+		margin-bottom: 10px
+	&__text
+		max-width: 300px
+		margin: 0 auto
+		text-align: justify
+	&__arrow
+		position: absolute
+		transform: translateX(-50%)
+		right: -47%
+		top: 97px
+		&--top
+			top: 30px
