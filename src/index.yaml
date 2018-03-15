@@ -11,3 +11,5 @@ PageList:
   ready: 50%
 - file: blog.html
   ready: 50%
+- file: article.html
+  ready: 50%
