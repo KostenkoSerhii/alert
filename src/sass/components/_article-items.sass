@@ -1,7 +1,22 @@
+.artitcles-list
+	.art-item
+		&:last-of-type
+			margin-bottom: 47px
 .art-item
 	position: relative
+	margin-bottom: 70px
+	&:not(.art-item--small)
+	
+		.art-item__more
+			position: absolute
+			bottom: 0
+			right: 0
+		.art-item__title
+			margin-bottom: 24px
+		.art-item__descr
+			padding-bottom: 28px
 	&--small
-		width: 360px
+		flex-basis: 360px
 		flex-grow: 0
 		flex-shrink: 1
 		margin-right: 30px
@@ -14,11 +29,19 @@
 			position: absolute
 			bottom: 6px
 			right: 2px
-
+		.art-item__img, .art-item__descr
+			width: 100%
+			float: none
+		.art-item__img
+			margin-bottom: 25px
+	&__inner
+		+clr
 	&__img
 		height: 169px
 		position: relative
-		margin-bottom: 25px
+		
+		width: 360px
+		float: left
 		img
 			width: 100%
 			height: 100%
@@ -38,6 +61,8 @@
 			font-size: 30px
 			display: block
 	&__descr
+		width: calc(100% - 390px)
+		float: right
 	&__title
 		margin-bottom: 36px
 	&__text

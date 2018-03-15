@@ -9,10 +9,12 @@
   font-style: normal;
 }
 
-$icon-arrow-r: "\EA01";
-$icon-facebook: "\EA02";
-$icon-medal: "\EA03";
-$icon-phone: "\EA04";
+$icon-arrow-l: "\EA01";
+$icon-arrow-r: "\EA02";
+$icon-check: "\EA03";
+$icon-facebook: "\EA04";
+$icon-medal: "\EA05";
+$icon-phone: "\EA06";
 
 
 %icon {
@@ -31,7 +33,9 @@ $icon-phone: "\EA04";
   display: inline-block;
 }
 
+.icon-arrow-l:before { content: $icon-arrow-l; }
 .icon-arrow-r:before { content: $icon-arrow-r; }
+.icon-check:before { content: $icon-check; }
 .icon-facebook:before { content: $icon-facebook; }
 .icon-medal:before { content: $icon-medal; }
 .icon-phone:before { content: $icon-phone; }

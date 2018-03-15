@@ -4,19 +4,226 @@ prodItems: [
 {
 	mode: 'prod-item--compare',
 	difficult: false,
+	img: 'prod-img-1',
+	btn: 'See details',
+	simpleTitle: 'Home',
+	price: '19.95',
+	price2: '19.45',
+	price3: '19.55',
+	compareValues: [
+	{
+		icon: false
+	},
+	{
+		icon: true
+	},
+	{
+		icon: true
+	},
+	{
+		icon: true
+	},
+	{
+		icon: true
+	},
+	{
+		icon: true
+	},
+	{
+		icon: true
+	},
+	{
+		icon: false
+	},
+	{
+		icon: false
+	},
+	{
+		icon: false
+	}
+	]
+},
+{
+	mode: 'prod-item--compare',
+	difficult: false,
+	img: 'prod-img-2',
+	btn: 'See details',
+	simpleTitle: 'Fall Detection',
+	price: '30.95',
+	price2: '30.35',
+	price3: '30.25',
+	compareValues: [
+	{
+		icon: true
+	},
+	{
+		icon: true
+	},
+	{
+		icon: true
+	},
+	{
+		icon: true
+	},
+	{
+		icon: true
+	},
+	{
+		icon: true
+	},
+	{
+		icon: true
+	},
+	{
+		icon: false
+	},
+	{
+		icon: true
+	},
+	{
+		icon: false
+	}
+	]
+},
+{
+	mode: 'prod-item--compare',
+	difficult: false,
+	img: 'prod-img-3',
+	btn: 'See details',
+	simpleTitle: 'On-the-Go',
+	price: '30.95',
+	price2: '30.55',
+	price3: '30.45',
+	compareValues: [
+	{
+		icon: true
+	},
+	{
+		icon: true
+	},
+	{
+		icon: true
+	},
+	{
+		icon: true
+	},
+	{
+		icon: true
+	},
+	{
+		icon: true
+	},
+	{
+		icon: true
+	},
+	{
+		icon: true
+	},
+	{
+		icon: false
+	},
+	{
+		icon: true
+	}
+	]
+},
+{
+	mode: 'prod-item--compare',
+	modePopular: 'prod-item--popular',
+	popular: true,
+	difficult: false,
+	img: 'prod-img-4',
+	btn: 'See details',
+	simpleTitle: 'Mobile + Fall Detection',
+	price: '41.95',
+	price2: '41.15',
+	price3: '41.25',
+	compareValues: [
+	{
+		icon: true
+	},
+	{
+		icon: true
+	},
+	{
+		icon: true
+	},
+	{
+		icon: true
+	},
+	{
+		icon: true
+	},
+	{
+		icon: true
+	},
+	{
+		icon: true
+	},
+	{
+		icon: true
+	},
+	{
+		icon: true
+	},
+	{
+		icon: true
+	}
+	]
+},
+{
+	mode: 'prod-item--compare',
+	difficult: false,
 	img: 'prod-img-5',
 	btn: 'See details',
-	price: '19.95',
-	simpleTitle: 'Home'
+	simpleTitle: 'Home + Mobile <br> + Fall Detection',
+	price: '52.95',
+	price2: '52.45',
+	price3: '52.65',
+	compareValues: [
+	{
+		icon: true
+	},
+	{
+		icon: true
+	},
+	{
+		icon: true
+	},
+	{
+		icon: true
+	},
+	{
+		icon: true
+	},
+	{
+		icon: true
+	},
+	{
+		icon: true
+	},
+	{
+		icon: true
+	},
+	{
+		icon: true
+	},
+	{
+		icon: true
+	}
+	]
 }
 ]
 compareOptions: [
 {
 	mode: 'compare__option--big',
-	text: 'Choose Your System'
+	text: 'Choose <br> Your System'
 },
 {
-	text: 'Monthly Rate <br> with Annual Plan'
+	text: 'Monthly Rate <br> 
+	<span class="switch-value js-switch-value is-active" data-switch-value="1">with Annual Plan</span>
+	<span class="switch-value js-switch-value " data-switch-value="2">with Semi-annual Plan</span>
+	<span class="switch-value js-switch-value " data-switch-value="3">with Quarterly Plan</span>'
 },
 {
 	text: 'No Landline  <br>  Required'
@@ -49,6 +256,31 @@ compareOptions: [
 	text: 'Speaker in the <br> Button'
 }
 ]
+howWork: {
+btn: 'Learn more about our medical alerts',
+list: [
+{
+	img: 'how-work-touch',
+	title: 'Press',
+	text: 'Your 100% showerproof help button will get you help for any type of emergency, big or small, 24/7'
+},
+{
+	img: 'how-work-manager',
+	title: 'Connect',
+	text: 'A US-based operator from one of our two Command Centers come on the line to assist you. Even if you cannot speak– we follow the procedures set up ahead of time to make sure you get help'
+},
+{
+	img: 'how-work-car',
+	title: 'Help',
+	text: 'We stay on the line with you until help arrives so that you are never alone. We reduce worry by notifying your family members, neighbors or doctors'
+}
+]
+}
+borderBlock: {
+title: '30 Day Refund Policy',
+content: '<p>Alert1 offers multiple payment plans so you can choose the service that best meets your needs for price and flexibility. Our members are never locked into a multi-year contract. You may cancel your service at any time, without any cancellation charges.</p>
+<p>To qualify for a refund, new members must subscribe to an annual or semi-annual service plan, use the medical alert device to place a successful test call to the Command Center and return the device in its original condition within 30 days of initial purchase. Any pre-paid shipping, warranty and activation fees are non-refundable.</p>'
+}
 ---
 {% extends "layouts/_layout.html" %}
 
@@ -60,12 +292,12 @@ compareOptions: [
 	<div class="l">
 		<h1 class="title-lg title-lg--mb-33">Medical Alert Systems Pricing</h1>
 		<!--begin compare-->
-		<div class="compare">
+		<div class="compare js-switch-wrapper">
 			<div class="compare__nav">
 				<span>Show Plans:</span>
-				<a class="is-active" href="#">Annual</a>
-				<a href="#">Semi-annual</a>
-				<a href="#">Quarterly</a>
+				<a class="is-active js-switch-btn" href="#" data-switch="1">Annual</a>
+				<a class=" js-switch-btn" href="#" data-switch="2">Semi-annual</a>
+				<a class=" js-switch-btn" href="#" data-switch="3">Quarterly</a>
 			</div>
 			<!--begin compare__inner-->
 			<div class="compare__inner">
@@ -91,6 +323,23 @@ compareOptions: [
 		<!--end compare-->
 	</div>
 	<!--end l-->
+	{% include "components/_how-work.html" %}
+	<!--begin video-section-->
+	<div class="video-section">
+		<!--begin l-->
+		<div class="l">
+			<h2 class="title-lg title-lg--mb-33">Why Customers Choose Alert1</h2>
+			<p class="video-section__text">Watch a customer testimonial video and learn why our members choose us to keep their loved ones safe.</p>
+			<div class="video-section__video-wrapper">
+				<iframe width="100%" height="100%" src="https://www.youtube.com/embed/gV_3rucwylc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			</div>
+		</div>
+		<!--end l-->
+	</div>
+	<!--end video-section-->
+{% include "components/_spec-border-block.html" %}
+
+
 </div>
 <!--end content-block prices-->
 {% endblock %}

@@ -1,0 +1,31 @@
+.pagination
+	// font-size: 0
+	// text-align: center
+	margin-bottom: 70px
+	+vertical
+	&__list, &__btn
+		display: inline-block
+		vertical-align: middle
+	&__btn
+		appearance: none
+		background: none
+		border: none
+		font-size: 0
+		svg
+			font-size: 13px
+			fill: $black
+	&__list
+		li
+			display: inline-block
+			vertical-align: top
+			margin: 0 6px
+			&.is-active
+				background: $blue
+				a
+					color: $white
+		a, span
+			font-size: 18px
+			color: $black
+			display: block
+			padding: 1px 3px
+			min-width: 23px

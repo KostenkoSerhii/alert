@@ -1,2 +1,32 @@
 .content-block
 	padding-top: 144px
+.article
+	&__cols
+		+clr
+		margin-bottom: 50px
+		&--mb-big
+			margin-bottom: 70px
+	&__left
+		float: left
+		width: percentage(655 / 1140)
+		.title-line
+			text-align: left
+			margin-bottom: 48px
+	&__right
+		float: right
+		width: percentage(457 / 1140)
+		text-align: right
+		font-size: 0
+		img
+			max-width: 100%
+			max-height: 270px
+			height: auto
+	a
+		color: $blue
+		position: relative
+		border-bottom: 1px solid $blue
+		+trans
+		&:hover
+			border-color: transparent
+	p
+		margin-bottom: 23px

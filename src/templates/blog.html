@@ -1,0 +1,116 @@
+---
+title: blog
+
+articles: [
+{
+	img: 'article-img',
+	date: '<strong>06</strong> JAN',
+	title: 'Annjuncing the winner of the 
+	2017 Alert1 student for seniors 
+	scholarship',
+	text: "Announcing the winner of our Students for Seniors Scholarship, Amanda! You'll want to read her touching stories about the seniors in her life."
+},
+{
+	img: 'article-img',
+	date: '<strong>06</strong> JAN',
+	title: 'Annjuncing the winner of the 
+	2017 Alert1 student for seniors 
+	scholarship',
+	text: "Announcing the winner of our Students for Seniors Scholarship, Amanda! You'll want to read her touching stories about the seniors in her life."
+},
+{
+	img: 'article-img',
+	date: '<strong>06</strong> JAN',
+	title: 'Annjuncing the winner of the 
+	2017 Alert1 student for seniors 
+	scholarship',
+	text: "Announcing the winner of our Students for Seniors Scholarship, Amanda! You'll want to read her touching stories about the seniors in her life."
+},
+{
+	img: 'article-img',
+	date: '<strong>06</strong> JAN',
+	title: 'Annjuncing the winner of the 
+	2017 Alert1 student for seniors 
+	scholarship',
+	text: "Announcing the winner of our Students for Seniors Scholarship, Amanda! You'll want to read her touching stories about the seniors in her life."
+},
+{
+	img: 'article-img',
+	date: '<strong>06</strong> JAN',
+	title: 'Annjuncing the winner of the 
+	2017 Alert1 student for seniors 
+	scholarship',
+	text: "Announcing the winner of our Students for Seniors Scholarship, Amanda! You'll want to read her touching stories about the seniors in her life."
+},
+{
+	img: 'article-img',
+	date: '<strong>06</strong> JAN',
+	title: 'Annjuncing the winner of the 
+	2017 Alert1 student for seniors 
+	scholarship',
+	text: "Announcing the winner of our Students for Seniors Scholarship, Amanda! You'll want to read her touching stories about the seniors in her life."
+}
+]
+
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+<!--begin content-block blog-->
+<div class="content-block blog">
+	<!--begin l-->
+	<div class="l">
+		<!--begin article-->
+		<div class="article">
+			<!--begin article__cols-->
+			<div class="article__cols article__cols--mb-big">
+				<!--begin article__left-->
+				<div class="article__left">
+					<h1 class="title-lg title-line">Announcing the winner of the 2017 
+					Alert1 Student for Seniors Scholarship</h1>
+					<p>Здесь пару-тройку строчек текста из последней статьи и далее ниже будет ссылка на развернутую статью. Может быть чуть больше текста...</p>
+					<div class="content-right">
+						<a class="link-more" href="#">Read more...</a>
+					</div>
+				</div>
+				<!--end article__left-->
+				<!--begin article__right-->
+				<div class="article__right">
+					<img src="img/blog-img.jpg" alt="alt">
+				</div>
+				<!--end article__right-->
+			</div>
+			<!--end article__cols-->
+		</div>
+		<!--end article-->
+		<!--begin artitcles-list-->
+		<div class="artitcles-list">
+			{% for item in articles %}
+			{% include "components/_article-item.html" %}
+			{% endfor %}
+		</div>
+		<!--end artitcles-list-->
+		<!--begin pagination-->
+		<div class="pagination">
+			<button class="pagination__btn">
+				{{mixins.icon('arrow-l')}}
+			</button>
+			<ul class="pagination__list">
+				<li><a href="#">1</a></li>
+				<li class="is-active"><a  href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><span>...</span></li>
+				<li class="is-active" ><a href="#">34</a></li>
+				<li><a href="#">45</a></li>
+			</ul>
+			<button class="pagination__btn">
+				{{mixins.icon('arrow-r')}}
+			</button>
+		</div>
+		<!--end pagination-->
+	</div>
+	<!--end l-->
+</div>
+<!--end content-block blog-->
+{% endblock %}

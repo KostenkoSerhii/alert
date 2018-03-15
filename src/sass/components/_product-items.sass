@@ -23,20 +23,26 @@
 		text-align: center
 		border-top: 2px solid $blue
 		margin-right: 30px
+		display: inline-block
+		vertical-align: top
+		white-space: normal
 		&:last-of-type
 			margin-right: 0
 		.prod-item__img
 			height: 152px
+			margin-bottom: 22px
 			&:after
 				width: 30px
-				bottom: -2px
+				bottom: -8px
 			img
 				max-width: 150px
 				max-height: 112px
 		.prod-item__title
 			font-size: 20px
 			+rob-l
+			margin-bottom: 0
 		.prod-item__price
+			margin-bottom: 0
 			color: $blue-d
 			+robc-b
 			font-size: 36px
@@ -46,6 +52,12 @@
 			min-width: 100%
 			font-size: 20px
 			padding: 8px 12px
+	&--popular
+		.prod-item__price
+			color: $green
+		.prod-item__compare-value
+			svg
+				fill: $green
 	&--small
 		background: $white
 		border-top: 3px solid $blue
@@ -99,6 +111,18 @@
 			max-width: 100%
 			height: auto
 			max-height: 241px
+	&__pupular
+		font-size: 13px
+		color: $white
+		+robc-b
+		text-align: center
+		background: $green
+		left: 0
+		top: 0
+		z-index: 1
+		position: absolute
+		padding: 4px
+		width: 57px
 	&__inner
 		+clr
 	&__left
@@ -125,6 +149,16 @@
 		font-size: 24px
 		+rob-m
 		margin-bottom: 18px
+	&__compare-value
+		// padding-top: 10px
+		i
+			display: inline-block
+			vertical-align: top
+			font-size: 0
+			margin-top: 10px
+		svg
+			fill: $blue
+			font-size: 22px
 .prod-list
 	display: flex
 	flex-wrap: wrap

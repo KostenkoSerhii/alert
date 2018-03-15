@@ -1,5 +1,5 @@
 <!--begin prod-item-->
-<div class="prod-item {{item.mode}}">
+<div class="prod-item {{item.mode}} {{item.modePopular}}">
 
 	{% if item.difficult %}
 	<div class="prod-item__inner">
@@ -7,21 +7,56 @@
 		<div class="prod-item__left">
 			{% endif %}
 
-			<div class="prod-item__img {{item.imgMode}}">
-				{% if item.popular %}
-				<div class="prod-item__pupular"></div>
+
+			{% if item.mode == 'prod-item--compare' %}
+			<!--begin prod-item__compare-value-->
+			<div class="prod-item__compare-value prod-item__compare-value--big">
 				{% endif %}
-				<img src="img/{{item.img}}.png" alt="alt">
+				<div class="prod-item__img {{item.imgMode}}">
+					{% if item.popular %}
+					<div class="prod-item__pupular">Most popular</div>
+					{% endif %}
+					<img src="img/{{item.img}}.png" alt="alt">
+				</div>
+				{% if item.simpleTitle %}
+				<p class="prod-item__title">{{item.simpleTitle | safe}}</p>
+				{% endif %}
+
+				{% if item.mode == 'prod-item--compare' %}
 			</div>
-			{% if item.simpleTitle %}
-			<p class="prod-item__title">{{item.simpleTitle}}</p>
+			<!--end prod-item__compare-value-->
 			{% endif %}
+
+
 			{% if item.simpleText %}
 			<p class="prod-item__text">{{item.simpleText}}</p>
 			{% endif %}
-			{% if item.price %}
-			<p class="prod-item__price">{{item.price}}</p>
+
+
+			{% if item.mode == 'prod-item--compare' %}
+			<!--begin prod-item__compare-value-->
+			<div class="prod-item__compare-value ">
+				{% endif %}
+
+				{% if item.price %}
+				<p class="prod-item__price switch-value js-switch-value is-active" data-switch-value="1">{{item.price}}</p>
+				<p class="prod-item__price switch-value js-switch-value" data-switch-value="2">{{item.price2}}</p>
+				<p class="prod-item__price switch-value js-switch-value" data-switch-value="3">{{item.price3}}</p>
+				{% endif %}
+
+
+				{% if item.mode == 'prod-item--compare' %}
+			</div>
+			<!--end prod-item__compare-value-->
+			{% for checkItem in item.compareValues %}
+			<div class="prod-item__compare-value">
+				{% if checkItem.icon == true %}
+				<i>{{mixins.icon('check')}}</i>
+				{% endif %}
+			</div>
+			{% endfor %}
 			{% endif %}
+
 			{% if item.btn %}
 			<a href="#" class="btn  prod-item__btn">{{item.btn}}</a>
 			{% endif %}

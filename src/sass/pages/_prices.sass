@@ -1,4 +1,5 @@
 .compare
+	margin-bottom: 70px
 	&__nav
 		display: flex
 		align-items: center
@@ -32,15 +33,64 @@
 					opacity: 1
 	&__inner
 		+clr
+		// display: flex
+	// &__options-col, &__content
+	// 	flex-grow: 0
+	// 	flex-shrink: 0
 	&__options-col
 		float: left
 		width: 180px
+		// flex-basis: 180px
 		padding-right: 15px
 	&__option
 		color: $blue-d
-		&--big
-			font-size: 24px
+		
 	&__content
 		float: right
+		// width: 1140 - 180 + px
 		width: calc(100% - 180px)
+		// flex-basis: 960px
+		
+		padding-left: 13px
 		overflow-x: auto
+	&__list
+		// width: 947px
+		overflow-x: auto
+		font-size: 0
+		white-space: nowrap
+.compare__option, .prod-item__compare-value
+	margin-bottom: 16px
+	min-height: 76px
+	&--big
+		height: 239px
+		margin-bottom: 0
+
+.compare__option
+	&--big
+		padding-top: 40px
+		font-size: 24px
+.switch-value
+	display: none
+	&.is-active
+		display: block
+.video-section
+	padding: 68px 0
+	&__text
+		margin-bottom: 25px
+		text-align: center
+	&__video-wrapper
+		max-width: 943px
+		margin-left: auto
+		margin-right: auto
+		height: 530px
+		// position: relative
+		// padding-bottom: 56.25%
+		// overflow: hidden
+		// frame, object, embed 
+		// 	width: 100%
+		// 	height: 100%
+		// 	display: block
+		// 	position: absolute
+		// 	top: 0
+		// 	left: 0
+
