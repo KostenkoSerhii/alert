@@ -1,5 +1,5 @@
 <!--begin prod-item-->
-<div class="prod-item {{item.mode}} {{item.modePopular}}">
+<div class="prod-item {{item.mode}} {{item.modePopular}}" itemscope itemtype="http://schema.org/Product">
 
 	{% if item.difficult %}
 	<div class="prod-item__inner">
@@ -16,10 +16,10 @@
 					{% if item.popular %}
 					<div class="prod-item__pupular">Most popular</div>
 					{% endif %}
-					<img src="img/{{item.img}}.png" alt="alt">
+					<img src="img/{{item.img}}.png" alt="alt" itemprop="image">
 				</div>
 				{% if item.simpleTitle %}
-				<p class="prod-item__title">{{item.simpleTitle | safe}}</p>
+				<p class="prod-item__title" itemprop="name">{{item.simpleTitle | safe}}</p>
 				{% endif %}
 
 				{% if item.mode == 'prod-item--compare' %}
@@ -39,9 +39,13 @@
 				{% endif %}
 
 				{% if item.price %}
-				<p class="prod-item__price switch-value js-switch-value is-active" data-switch-value="1">{{item.price}}</p>
-				<p class="prod-item__price switch-value js-switch-value" data-switch-value="2">{{item.price2}}</p>
-				<p class="prod-item__price switch-value js-switch-value" data-switch-value="3">{{item.price3}}</p>
+				<p class="prod-item__price switch-value js-switch-value is-active" data-switch-value="1" itemprop="offers" itemscope itemtype="http://schema.org/Offer">{{item.price | safe}}</p>
+				{% if item.price2 %}
+				<p class="prod-item__price switch-value js-switch-value" data-switch-value="2" itemprop="offers" itemscope itemtype="http://schema.org/Offer">{{item.price2  | safe}}</p>
+				{% endif %}
+				{% if item.price3 %}
+				<p class="prod-item__price switch-value js-switch-value" data-switch-value="3" itemprop="offers" itemscope itemtype="http://schema.org/Offer">{{item.price3  | safe}}</p>
+				{% endif %}
 				{% endif %}
 
 
@@ -58,16 +62,16 @@
 			{% endif %}
 
 			{% if item.btn %}
-			<a href="#" class="btn  prod-item__btn">{{item.btn}}</a>
+			<a href="#" class="btn  prod-item__btn" itemprop="url">{{item.btn}}</a>
 			{% endif %}
 			{% if item.difficult %}
 		</div>
 		<!--end prod-item__left-->
 		<!--begin prod-item__right-->
 		<div class="prod-item__right">
-			<h2 class="title-l prod-item__title">{{item.title}}</h2>
+			<h2 class="title-l prod-item__title" itemprop="name">{{item.title}}</h2>
 			<p class="title-sm title-line">{{item.titleSec}}</p>
-			<div class="prod-item__text article">
+			<div class="prod-item__text article" itemprop="description">
 				{{item.text |safe}}
 			</div>
 			{% for globItem in item.list %}

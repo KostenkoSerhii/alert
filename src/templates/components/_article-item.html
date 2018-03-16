@@ -1,14 +1,24 @@
 <!--begin art-item-->
-<div class="art-item {{item.mode}}">
+<div class="art-item {{item.mode}}" itemscope itemtype="http://schema.org/Article">
 	<div class="art-item__inner">
+		<meta itemprop="author"  content="author">
+		<meta itemprop="dateModified" content="2018-03-15">
+		<meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="article-page-url"/>
+		<div class="hidden" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+			<meta itemprop="name" content="alert">
+			<span itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+				<img class="itemprops" itemprop="url image" src="http://site/logo.jpg" alt="alt" />
+				<link itemprop="url"  href="#" >
+			</span>
+		</div>
 		<div class="art-item__img">
-			<img src="img/{{item.img}}.jpg" alt="alt">
-			<div class="art-item__date">{{item.date | safe}}</div>
+			<img src="img/{{item.img}}.jpg" alt="alt" itemprop="image">
+			<div class="art-item__date" itemprop="datePublished" content="2018-03-15">{{item.date | safe}}</div>
 		</div>
 		<div class="art-item__descr">
-			<h4 class="title-m art-item__title">{{item.title}}</h4>
-			<div class="art-item__text">{{item.text}}</div>
-			<a class="link-more art-item__more" href="#">Read more...</a>
+			<h4 class="title-m art-item__title" itemprop="headline">{{item.title}}</h4>
+			<div class="art-item__text" itemprop="about">{{item.text}}</div>
+			<a class="link-more art-item__more" href="#" itemprop="url">Read more...</a>
 		</div>
 	</div>
 </div>

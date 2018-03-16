@@ -61,22 +61,33 @@ articles: [
 	<!--begin l-->
 	<div class="l">
 		<!--begin article-->
-		<div class="article">
+		<div class="article" itemscope itemtype="http://schema.org/Article">
+			<meta itemprop="author"  content="author">
+			<meta itemprop="dateModified" content="2018-03-15">
+			<meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="article-page-url"/>
+			<meta itemprop="datePublished" content="2018-03-15">
+			<div class="hidden" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+				<meta itemprop="name" content="alert">
+				<span itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+					<img class="itemprops" itemprop="url image" src="http://site/logo.jpg" alt="alt" />
+					<link itemprop="url"  href="#" >
+				</span>
+			</div>
 			<!--begin article__cols-->
 			<div class="article__cols article__cols--mb-big">
 				<!--begin article__left-->
 				<div class="article__left">
-					<h1 class="title-lg title-line">Announcing the winner of the 2017 
+					<h1 class="title-lg title-line" itemprop="headline">Announcing the winner of the 2017 
 					Alert1 Student for Seniors Scholarship</h1>
-					<p>Здесь пару-тройку строчек текста из последней статьи и далее ниже будет ссылка на развернутую статью. Может быть чуть больше текста...</p>
+					<p itemprop="about">Здесь пару-тройку строчек текста из последней статьи и далее ниже будет ссылка на развернутую статью. Может быть чуть больше текста...</p>
 					<div class="content-right">
-						<a class="link-more" href="#">Read more...</a>
+						<a class="link-more" href="#" itemprop="url">Read more...</a>
 					</div>
 				</div>
 				<!--end article__left-->
 				<!--begin article__right-->
 				<div class="article__right">
-					<img src="img/blog-img.jpg" alt="alt">
+					<img src="img/blog-img.jpg" alt="alt" itemprop="image">
 				</div>
 				<!--end article__right-->
 			</div>

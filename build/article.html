@@ -8,7 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#fff">
     <meta name="format-detection" content="telephone=no">
-    <link rel="stylesheet" media="all" href="css/app.css"> </head>
+    <link rel="stylesheet" media="all" href="css/app.css">
+    <meta name="description" content=""> </head>
 
   <body>
     <!-- BEGIN content -->
@@ -31,14 +32,23 @@
         <!--end l-->
       </header>
       <!--begin content-block article-->
-      <div class="content-block article">
+      <div class="content-block article" itemscope itemtype="http://schema.org/Article">
+        <meta itemprop="author" content="author">
+        <meta itemprop="dateModified" content="2018-03-15">
+        <meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="article-page-url" />
+        <meta itemprop="datePublished" content="2018-03-15">
+        <div class="hidden" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+          <meta itemprop="name" content="alert"> <span itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+					<img class="itemprops" itemprop="url image" src="http://site/logo.jpg" alt="alt" />
+					<link itemprop="url"  href="#" >
+				</span> </div>
         <!--begin l-->
         <div class="l">
           <!--begin article__cols-->
-          <div class="article__cols ">
+          <div class="article__cols " itemprop="articleBody">
             <!--begin article__left-->
             <div class="article__left">
-              <h1 class="title-lg title-line">Announcing the winner of the 2017 Alert1 Student for Seniors Scholarship</h1>
+              <h1 class="title-lg title-line" itemprop="headline">Announcing the winner of the 2017 Alert1 Student for Seniors Scholarship</h1>
               <p class="decor-text">For our second year in a row, the Alert1 team ran our <a href="#">Student for Seniors Scholarship</a>. Our goal with this scholarship is to reward students who have played a positive role in the lives of seniors.</p>
               <p>It is our hope that entering our scholarship helped applicants reflect on their relationships with older adults in their lives. To that end, we asked each applicant three questions:</p>
               <ul>
@@ -52,7 +62,7 @@
             </div>
             <!--end article__left-->
             <!--begin article__right-->
-            <div class="article__right"> <img src="img/article-page-img.jpg" alt="alt"> </div>
+            <div class="article__right"> <img src="img/article-page-img.jpg" alt="alt" itemprop="image"> </div>
             <!--end article__right-->
           </div>
           <!--end article__cols-->
@@ -91,12 +101,12 @@
             <div class="user-block ">
               <p class="user-block__name">Phil (Findlay, OH)</p>
               <p class="user-block__text">Once again Alert1 performed excellent. Mom fell again. They called the paramedics, then my brother then me just like we planned. Mom was ok this time but I couldn’t ask for better service from Alert1.</p>
-              <p class="user-block__date">Posted on 11/3/2017</p>
+              <p class="user-block__date"> Posted on 11/3/2017</p>
             </div>
             <div class="user-block ">
               <p class="user-block__name">Phil (Findlay, OH)</p>
               <p class="user-block__text">Once again Alert1 performed excellent. Mom fell again. They called the paramedics, then my brother then me just like we planned. Mom was ok this time but I couldn’t ask for better service from Alert1.</p>
-              <p class="user-block__date">Posted on 11/3/2017</p>
+              <p class="user-block__date"> Posted on 11/3/2017</p>
             </div> <button class="btn btn--m user-section__btn">Add a сomment</button>
             <div class="centered"> <a class="link-underline" href="#">Show more</a> </div>
           </div>
@@ -112,38 +122,62 @@
           <!--begin art-section__list-->
           <div class="art-section__list">
             <!--begin art-item-->
-            <div class="art-item art-item--small">
+            <div class="art-item art-item--small" itemscope itemtype="http://schema.org/Article">
               <div class="art-item__inner">
-                <div class="art-item__img"> <img src="img/article-img.jpg" alt="alt">
-                  <div class="art-item__date"><strong>06</strong> JAN</div>
+                <meta itemprop="author" content="author">
+                <meta itemprop="dateModified" content="2018-03-15">
+                <meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="article-page-url" />
+                <div class="hidden" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+                  <meta itemprop="name" content="alert"> <span itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+				<img class="itemprops" itemprop="url image" src="http://site/logo.jpg" alt="alt" />
+				<link itemprop="url"  href="#" >
+			</span> </div>
+                <div class="art-item__img"> <img src="img/article-img.jpg" alt="alt" itemprop="image">
+                  <div class="art-item__date" itemprop="datePublished" content="2018-03-15"><strong>06</strong> JAN</div>
                 </div>
                 <div class="art-item__descr">
-                  <h4 class="title-m art-item__title">Annjuncing the winner of the 2017 Alert1 student for seniors scholarship</h4>
-                  <div class="art-item__text">Announcing the winner of our Students for Seniors Scholarship, Amanda! You&#39;ll want to read her touching stories about the seniors in her life.</div> <a class="link-more art-item__more" href="#">Read more...</a> </div>
+                  <h4 class="title-m art-item__title" itemprop="headline">Annjuncing the winner of the 2017 Alert1 student for seniors scholarship</h4>
+                  <div class="art-item__text" itemprop="about">Announcing the winner of our Students for Seniors Scholarship, Amanda! You&#39;ll want to read her touching stories about the seniors in her life.</div> <a class="link-more art-item__more" href="#" itemprop="url">Read more...</a> </div>
               </div>
             </div>
             <!--end art-item-->
             <!--begin art-item-->
-            <div class="art-item art-item--small">
+            <div class="art-item art-item--small" itemscope itemtype="http://schema.org/Article">
               <div class="art-item__inner">
-                <div class="art-item__img"> <img src="img/article-img.jpg" alt="alt">
-                  <div class="art-item__date"><strong>06</strong> JAN</div>
+                <meta itemprop="author" content="author">
+                <meta itemprop="dateModified" content="2018-03-15">
+                <meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="article-page-url" />
+                <div class="hidden" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+                  <meta itemprop="name" content="alert"> <span itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+				<img class="itemprops" itemprop="url image" src="http://site/logo.jpg" alt="alt" />
+				<link itemprop="url"  href="#" >
+			</span> </div>
+                <div class="art-item__img"> <img src="img/article-img.jpg" alt="alt" itemprop="image">
+                  <div class="art-item__date" itemprop="datePublished" content="2018-03-15"><strong>06</strong> JAN</div>
                 </div>
                 <div class="art-item__descr">
-                  <h4 class="title-m art-item__title">Annjuncing the winner of the 2017 Alert1 student for seniors scholarship</h4>
-                  <div class="art-item__text">Announcing the winner of our Students for Seniors Scholarship, Amanda! You&#39;ll want to read her touching stories about the seniors in her life.</div> <a class="link-more art-item__more" href="#">Read more...</a> </div>
+                  <h4 class="title-m art-item__title" itemprop="headline">Annjuncing the winner of the 2017 Alert1 student for seniors scholarship</h4>
+                  <div class="art-item__text" itemprop="about">Announcing the winner of our Students for Seniors Scholarship, Amanda! You&#39;ll want to read her touching stories about the seniors in her life.</div> <a class="link-more art-item__more" href="#" itemprop="url">Read more...</a> </div>
               </div>
             </div>
             <!--end art-item-->
             <!--begin art-item-->
-            <div class="art-item art-item--small">
+            <div class="art-item art-item--small" itemscope itemtype="http://schema.org/Article">
               <div class="art-item__inner">
-                <div class="art-item__img"> <img src="img/article-img.jpg" alt="alt">
-                  <div class="art-item__date"><strong>06</strong> JAN</div>
+                <meta itemprop="author" content="author">
+                <meta itemprop="dateModified" content="2018-03-15">
+                <meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="article-page-url" />
+                <div class="hidden" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+                  <meta itemprop="name" content="alert"> <span itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+				<img class="itemprops" itemprop="url image" src="http://site/logo.jpg" alt="alt" />
+				<link itemprop="url"  href="#" >
+			</span> </div>
+                <div class="art-item__img"> <img src="img/article-img.jpg" alt="alt" itemprop="image">
+                  <div class="art-item__date" itemprop="datePublished" content="2018-03-15"><strong>06</strong> JAN</div>
                 </div>
                 <div class="art-item__descr">
-                  <h4 class="title-m art-item__title">Annjuncing the winner of the 2017 Alert1 student for seniors scholarship</h4>
-                  <div class="art-item__text">Announcing the winner of our Students for Seniors Scholarship, Amanda! You&#39;ll want to read her touching stories about the seniors in her life.</div> <a class="link-more art-item__more" href="#">Read more...</a> </div>
+                  <h4 class="title-m art-item__title" itemprop="headline">Annjuncing the winner of the 2017 Alert1 student for seniors scholarship</h4>
+                  <div class="art-item__text" itemprop="about">Announcing the winner of our Students for Seniors Scholarship, Amanda! You&#39;ll want to read her touching stories about the seniors in her life.</div> <a class="link-more art-item__more" href="#" itemprop="url">Read more...</a> </div>
               </div>
             </div>
             <!--end art-item-->

@@ -3,12 +3,13 @@
 
   <head>
     <meta charset="utf-8">
-    <title>product page</title>
+    <title>Kelsi Pro Product Features</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#fff">
     <meta name="format-detection" content="telephone=no">
-    <link rel="stylesheet" media="all" href="css/app.css"> </head>
+    <link rel="stylesheet" media="all" href="css/app.css">
+    <meta name="description" content="Automatically detects falls and calls for help Custom emergency responders- you decide who we call Uses GPS, Wi-Fi, and cellular coverage to locate you if a fall is detected or button is pushed"> </head>
 
   <body>
     <!-- BEGIN content -->
@@ -31,16 +32,16 @@
         <!--end l-->
       </header>
       <!--begin content-block product-page-->
-      <div class="content-block prod-page">
+      <div class="content-block prod-page" itemscope itemtype="http://schema.org/Product">
         <!--begin l-->
         <div class="l">
           <div class="prod-page__top">
             <div class="prod-page__slider-side">
               <div class="prod-main-slider js-main-prod-slider">
-                <div class="prod-main-slider__slide"> <img src="img/prod-main-img.jpg" alt="alt"> </div>
-                <div class="prod-main-slider__slide"> <img src="img/prod-main-img.jpg" alt="alt"> </div>
-                <div class="prod-main-slider__slide"> <img src="img/prod-main-img.jpg" alt="alt"> </div>
-                <div class="prod-main-slider__slide"> <img src="img/prod-main-img.jpg" alt="alt"> </div>
+                <div class="prod-main-slider__slide"> <img src="img/prod-main-img.jpg" alt="alt" itemprop="image"> </div>
+                <div class="prod-main-slider__slide"> <img src="img/prod-main-img.jpg" alt="alt" itemprop="image"> </div>
+                <div class="prod-main-slider__slide"> <img src="img/prod-main-img.jpg" alt="alt" itemprop="image"> </div>
+                <div class="prod-main-slider__slide"> <img src="img/prod-main-img.jpg" alt="alt" itemprop="image"> </div>
               </div>
               <div class="prod-nav-slider js-nav-prod-slider">
                 <div class="prod-nav-slider__slide"> <img src="img/prod-nav-img1.jpg" alt="alt"> </div>
@@ -53,10 +54,10 @@
             </div>
             <!--begin prod-page__desrc-side-->
             <div class="prod-page__desrc-side">
-              <h1 class="title-lg prod-page__title">Kelsi Pro: On-the-Go Fall Detection</h1>
+              <h1 class="title-lg prod-page__title" itemprop="name">Kelsi Pro: On-the-Go Fall Detection</h1>
               <p class="title-sm title-line">No landline required</p>
-              <div class="prod-rating">
-                <div class="star-ratings "> <span style="width:45%" class="star-ratings__full"></span> </div> <span class="prod-rating__count">(199 reviews) </span> <span class="prod-rating__text">In Stock</span> </div>
+              <div class="prod-rating" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+                <div class="star-ratings "> <span style="width:45%" class="star-ratings__full"></span> <span class="star-ratings__hidden" itemprop="ratingValue">4</span> </div> <span class="prod-rating__count">(<span itemprop="reviewCount">199</span> reviews) </span> <span class="prod-rating__text">In Stock</span>                </div>
               <div class="prod-form">
                 <form>
                   <p class="prod-form__text">How many people will be using this system?</p>
@@ -69,18 +70,18 @@
                   <p class="prod-form__text">Select your payment plan:</p>
                   <!--begin prod-form__line-->
                   <div class="prod-form__line">
-                    <div class="prod-form__block"> <input type="radio" name="payment" id="payment1" checked> <label for="payment1"><span>Pay annually</span></label>
-                      <div class="prod-form__price"> $41.95/month
+                    <div class="prod-form__block" itemprop="offers" itemscope itemtype="http://schema.org/Offer"> <input type="radio" name="payment" id="payment1" checked> <label for="payment1"><span>Pay annually</span></label>
+                      <div class="prod-form__price"> <span itemprop="priceCurrency" content="USD">$</span><span itemprop="price" content="41.95">41.95</span>/month
                         <p>2 FREE months</p>
                       </div>
                     </div>
-                    <div class="prod-form__block"> <input type="radio" name="payment" id="payment2"> <label for="payment2"><span>Pay <br> semi - annually</span></label>
-                      <div class="prod-form__price"> $41.95/month
+                    <div class="prod-form__block" itemprop="offers" itemscope itemtype="http://schema.org/Offer"> <input type="radio" name="payment" id="payment2"> <label for="payment2"><span>Pay <br> semi - annually</span></label>
+                      <div class="prod-form__price"> <span itemprop="priceCurrency" content="USD">$</span><span itemprop="price" content="41.95">41.95</span>/month
                         <p>1 FREE months</p>
                       </div>
                     </div>
-                    <div class="prod-form__block"> <input type="radio" name="payment" id="payment3"> <label for="payment3"><span>Pay quarterly</span></label>
-                      <div class="prod-form__price"> $47.95/month </div>
+                    <div class="prod-form__block" itemprop="offers" itemscope itemtype="http://schema.org/Offer"> <input type="radio" name="payment" id="payment3"> <label for="payment3"><span>Pay quarterly</span></label>
+                      <div class="prod-form__price"> <span itemprop="priceCurrency" content="USD">$</span><span itemprop="price" content="47.95">47.95</span>/month </div>
                     </div>
                   </div>
                   <!--end prod-form__line-->
@@ -93,7 +94,7 @@
             <!--end prod-page__desrc-side-->
           </div>
           <!--begin two-col-->
-          <div class="two-col prod-page__two-col">
+          <div class="two-col prod-page__two-col" itemprop="description">
             <div class="two-col__left">
               <!--begin list-->
               <div class="list list--marg-small">
@@ -218,318 +219,326 @@
           <!--end l-->
         </div>
         <!--end prod-lists-->
-      </div>
-      <!--begin line-block-->
-      <div class="line-block line-block--mb-m line-block--dashed">
-        <!--begin l-->
-        <div class="l">
-          <div class="line-block__inner"> Call us today at <a href="tel:1-877-959-8354">1-877-959-8354</a> to get peace of mind with Alert1 </div>
-        </div>
-        <!--end l-->
-      </div>
-      <!--end line-block-->
-      <!--begin dropdowns-section-->
-      <div class="dropdowns-section">
-        <!--begin l-->
-        <div class="l">
-          <h2 class="title-lg title-lg--mb-48">Kelsi Pro Fall Detection Technical Specifications</h2>
-          <!--begin dropdowns-section__inner-->
-          <div class="dropdowns-section__inner">
-            <div class="dropdowns-section__left"> <img src="img/drop-img.png" alt="alt"> </div>
-            <!--begin dropdowns-section__right-->
-            <div class="dropdowns-section__right">
-              <!--begin drop-block -->
-              <div class="drop-block  js-drop-block ">
-                <div class="drop-block__title js-drop-block-toggler"> <i class="drop-block__icon">
-<svg class="icon icon-arrow-r"><use xlink:href="img/sprite.svg#icon-arrow-r"></use></svg>
-</i>
-                  <p class="title-m">Manual Alert + Fall Detection</p>
-                </div>
-                <div class="drop-block__content js-drop-block-content">
-                  <!--begin list-->
-                  <div class="list list--marg-small">
-                    <ul>
-                      <li>Mechanical touch button initiates voice call and simultaneous data transmission to call center</li>
-                      <li>On board sensors for free fall and three dimensional (3D) space analysis using proprietary algorithms</li>
-                      <li>Fall detection analysis and identification using cloud based algorithms and class libraries</li>
-                    </ul>
-                  </div>
-                  <!--end list-->
-                </div>
-              </div>
-              <!--end drop-block -->
-              <!--begin drop-block -->
-              <div class="drop-block  js-drop-block ">
-                <div class="drop-block__title js-drop-block-toggler"> <i class="drop-block__icon">
-<svg class="icon icon-arrow-r"><use xlink:href="img/sprite.svg#icon-arrow-r"></use></svg>
-</i>
-                  <p class="title-m">Network + Connectivity</p>
-                </div>
-                <div class="drop-block__content js-drop-block-content">
-                  <!--begin list-->
-                  <div class="list list--marg-small">
-                    <ul>
-                      <li>Mechanical touch button initiates voice call and simultaneous data transmission to call center</li>
-                      <li>On board sensors for free fall and three dimensional (3D) space analysis using proprietary algorithms</li>
-                      <li>Fall detection analysis and identification using cloud based algorithms and class libraries</li>
-                    </ul>
-                  </div>
-                  <!--end list-->
-                </div>
-              </div>
-              <!--end drop-block -->
-              <!--begin drop-block -->
-              <div class="drop-block  js-drop-block ">
-                <div class="drop-block__title js-drop-block-toggler"> <i class="drop-block__icon">
-<svg class="icon icon-arrow-r"><use xlink:href="img/sprite.svg#icon-arrow-r"></use></svg>
-</i>
-                  <p class="title-m">Audio</p>
-                </div>
-                <div class="drop-block__content js-drop-block-content">
-                  <!--begin list-->
-                  <div class="list list--marg-small">
-                    <ul>
-                      <li>Mechanical touch button initiates voice call and simultaneous data transmission to call center</li>
-                      <li>On board sensors for free fall and three dimensional (3D) space analysis using proprietary algorithms</li>
-                      <li>Fall detection analysis and identification using cloud based algorithms and class libraries</li>
-                    </ul>
-                  </div>
-                  <!--end list-->
-                </div>
-              </div>
-              <!--end drop-block -->
-              <!--begin drop-block -->
-              <div class="drop-block  js-drop-block ">
-                <div class="drop-block__title js-drop-block-toggler"> <i class="drop-block__icon">
-<svg class="icon icon-arrow-r"><use xlink:href="img/sprite.svg#icon-arrow-r"></use></svg>
-</i>
-                  <p class="title-m">Power and Battery</p>
-                </div>
-                <div class="drop-block__content js-drop-block-content">
-                  <!--begin list-->
-                  <div class="list list--marg-small">
-                    <ul>
-                      <li>Mechanical touch button initiates voice call and simultaneous data transmission to call center</li>
-                      <li>On board sensors for free fall and three dimensional (3D) space analysis using proprietary algorithms</li>
-                      <li>Fall detection analysis and identification using cloud based algorithms and class libraries</li>
-                    </ul>
-                  </div>
-                  <!--end list-->
-                </div>
-              </div>
-              <!--end drop-block -->
-              <!--begin drop-block -->
-              <div class="drop-block  js-drop-block ">
-                <div class="drop-block__title js-drop-block-toggler"> <i class="drop-block__icon">
-<svg class="icon icon-arrow-r"><use xlink:href="img/sprite.svg#icon-arrow-r"></use></svg>
-</i>
-                  <p class="title-m">Weight and Dimensions</p>
-                </div>
-                <div class="drop-block__content js-drop-block-content">
-                  <!--begin list-->
-                  <div class="list list--marg-small">
-                    <ul>
-                      <li>Mechanical touch button initiates voice call and simultaneous data transmission to call center</li>
-                      <li>On board sensors for free fall and three dimensional (3D) space analysis using proprietary algorithms</li>
-                      <li>Fall detection analysis and identification using cloud based algorithms and class libraries</li>
-                    </ul>
-                  </div>
-                  <!--end list-->
-                </div>
-              </div>
-              <!--end drop-block -->
-              <!--begin drop-block -->
-              <div class="drop-block  js-drop-block ">
-                <div class="drop-block__title js-drop-block-toggler"> <i class="drop-block__icon">
-<svg class="icon icon-arrow-r"><use xlink:href="img/sprite.svg#icon-arrow-r"></use></svg>
-</i>
-                  <p class="title-m">Environment</p>
-                </div>
-                <div class="drop-block__content js-drop-block-content">
-                  <!--begin list-->
-                  <div class="list list--marg-small">
-                    <ul>
-                      <li>Mechanical touch button initiates voice call and simultaneous data transmission to call center</li>
-                      <li>On board sensors for free fall and three dimensional (3D) space analysis using proprietary algorithms</li>
-                      <li>Fall detection analysis and identification using cloud based algorithms and class libraries</li>
-                    </ul>
-                  </div>
-                  <!--end list-->
-                </div>
-              </div>
-              <!--end drop-block -->
-              <!--begin drop-block -->
-              <div class="drop-block  js-drop-block ">
-                <div class="drop-block__title js-drop-block-toggler"> <i class="drop-block__icon">
-<svg class="icon icon-arrow-r"><use xlink:href="img/sprite.svg#icon-arrow-r"></use></svg>
-</i>
-                  <p class="title-m">Certifications</p>
-                </div>
-                <div class="drop-block__content js-drop-block-content">
-                  <!--begin list-->
-                  <div class="list list--marg-small">
-                    <ul>
-                      <li>Mechanical touch button initiates voice call and simultaneous data transmission to call center</li>
-                      <li>On board sensors for free fall and three dimensional (3D) space analysis using proprietary algorithms</li>
-                      <li>Fall detection analysis and identification using cloud based algorithms and class libraries</li>
-                    </ul>
-                  </div>
-                  <!--end list-->
-                </div>
-              </div>
-              <!--end drop-block -->
-            </div>
-            <!--end dropdowns-section__right-->
+        <!--begin line-block-->
+        <div class="line-block line-block--mb-m line-block--dashed">
+          <!--begin l-->
+          <div class="l">
+            <div class="line-block__inner"> Call us today at <a href="tel:1-877-959-8354">1-877-959-8354</a> to get peace of mind with Alert1 </div>
           </div>
-          <!--end dropdowns-section__inner-->
+          <!--end l-->
         </div>
-        <!--end l-->
-      </div>
-      <!--end dropdowns-section-->
-      <div class="section section--border-top">
-        <!--begin l-->
-        <div class="l">
-          <div class="border-block">
-            <h2 class="title-lg border-block__title">30 Day Refund Policy</h2>
-            <div class="border-block__content">
-              <p>Alert1 offers multiple payment plans so you can choose the service that best meets your needs for price and flexibility. Our members are never locked into a multi-year contract. You may cancel your service at any time, without any cancellation
-                charges.</p>
-              <p>To qualify for a refund, new members must subscribe to an annual or semi-annual service plan, use the medical alert device to place a successful test call to the Command Center and return the device in its original condition within 30 days
-                of initial purchase. Any pre-paid shipping, warranty and activation fees are non-refundable.</p>
-              <div class="border-block__icon"> <svg class="icon icon-medal"><use xlink:href="img/sprite.svg#icon-medal"></use></svg> </div>
-            </div>
-          </div>
-        </div>
-        <!--end l-->
-      </div>
-      <div class="line-block line-block--mb-none">
-        <!--begin l-->
-        <div class="l">
-          <div class="line-block__inner"> Call us today at <a href="tel:1-877-959-8354">1-877-959-8354</a> to get peace of mind with Alert1 </div>
-        </div>
-        <!--end l-->
-      </div>
-      <section class="section  section--border-bottom section--big-padding-bottom section--mb">
-        <!--begin l-->
-        <div class="l">
-          <h2 class="title-lg section__title section__title--mb-big">Feedback from our customers</h2>
-          <div class="slider js-slider">
-            <div class="slider__slide slide">
-              <div class="slider__img"> <img src="img/slider-img.jpg" alt="alt"> </div>
-              <div class="slider__text-side">
-                <p class="slider__title">DeeDee — AR</p>
-                <div class="slider__text"> After researching many &quot;help&quot; systems for my parents, we chose Alert1. It was the best decision we ever made! I cannot express how wonderful the people are and the caring manner in which they treat you. Trust me when I say that
-                  Alert1 gives us total Peace of Mind! </div>
+        <!--end line-block-->
+        <!--begin dropdowns-section-->
+        <div class="dropdowns-section">
+          <!--begin l-->
+          <div class="l">
+            <h2 class="title-lg title-lg--mb-48">Kelsi Pro Fall Detection Technical Specifications</h2>
+            <!--begin dropdowns-section__inner-->
+            <div class="dropdowns-section__inner">
+              <div class="dropdowns-section__left"> <img src="img/drop-img.png" alt="alt"> </div>
+              <!--begin dropdowns-section__right-->
+              <div class="dropdowns-section__right">
+                <!--begin drop-block -->
+                <div class="drop-block  js-drop-block ">
+                  <div class="drop-block__title js-drop-block-toggler"> <i class="drop-block__icon">
+<svg class="icon icon-arrow-r"><use xlink:href="img/sprite.svg#icon-arrow-r"></use></svg>
+</i>
+                    <p class="title-m">Manual Alert + Fall Detection</p>
+                  </div>
+                  <div class="drop-block__content js-drop-block-content">
+                    <!--begin list-->
+                    <div class="list list--marg-small">
+                      <ul>
+                        <li>Mechanical touch button initiates voice call and simultaneous data transmission to call center</li>
+                        <li>On board sensors for free fall and three dimensional (3D) space analysis using proprietary algorithms</li>
+                        <li>Fall detection analysis and identification using cloud based algorithms and class libraries</li>
+                      </ul>
+                    </div>
+                    <!--end list-->
+                  </div>
+                </div>
+                <!--end drop-block -->
+                <!--begin drop-block -->
+                <div class="drop-block  js-drop-block ">
+                  <div class="drop-block__title js-drop-block-toggler"> <i class="drop-block__icon">
+<svg class="icon icon-arrow-r"><use xlink:href="img/sprite.svg#icon-arrow-r"></use></svg>
+</i>
+                    <p class="title-m">Network + Connectivity</p>
+                  </div>
+                  <div class="drop-block__content js-drop-block-content">
+                    <!--begin list-->
+                    <div class="list list--marg-small">
+                      <ul>
+                        <li>Mechanical touch button initiates voice call and simultaneous data transmission to call center</li>
+                        <li>On board sensors for free fall and three dimensional (3D) space analysis using proprietary algorithms</li>
+                        <li>Fall detection analysis and identification using cloud based algorithms and class libraries</li>
+                      </ul>
+                    </div>
+                    <!--end list-->
+                  </div>
+                </div>
+                <!--end drop-block -->
+                <!--begin drop-block -->
+                <div class="drop-block  js-drop-block ">
+                  <div class="drop-block__title js-drop-block-toggler"> <i class="drop-block__icon">
+<svg class="icon icon-arrow-r"><use xlink:href="img/sprite.svg#icon-arrow-r"></use></svg>
+</i>
+                    <p class="title-m">Audio</p>
+                  </div>
+                  <div class="drop-block__content js-drop-block-content">
+                    <!--begin list-->
+                    <div class="list list--marg-small">
+                      <ul>
+                        <li>Mechanical touch button initiates voice call and simultaneous data transmission to call center</li>
+                        <li>On board sensors for free fall and three dimensional (3D) space analysis using proprietary algorithms</li>
+                        <li>Fall detection analysis and identification using cloud based algorithms and class libraries</li>
+                      </ul>
+                    </div>
+                    <!--end list-->
+                  </div>
+                </div>
+                <!--end drop-block -->
+                <!--begin drop-block -->
+                <div class="drop-block  js-drop-block ">
+                  <div class="drop-block__title js-drop-block-toggler"> <i class="drop-block__icon">
+<svg class="icon icon-arrow-r"><use xlink:href="img/sprite.svg#icon-arrow-r"></use></svg>
+</i>
+                    <p class="title-m">Power and Battery</p>
+                  </div>
+                  <div class="drop-block__content js-drop-block-content">
+                    <!--begin list-->
+                    <div class="list list--marg-small">
+                      <ul>
+                        <li>Mechanical touch button initiates voice call and simultaneous data transmission to call center</li>
+                        <li>On board sensors for free fall and three dimensional (3D) space analysis using proprietary algorithms</li>
+                        <li>Fall detection analysis and identification using cloud based algorithms and class libraries</li>
+                      </ul>
+                    </div>
+                    <!--end list-->
+                  </div>
+                </div>
+                <!--end drop-block -->
+                <!--begin drop-block -->
+                <div class="drop-block  js-drop-block ">
+                  <div class="drop-block__title js-drop-block-toggler"> <i class="drop-block__icon">
+<svg class="icon icon-arrow-r"><use xlink:href="img/sprite.svg#icon-arrow-r"></use></svg>
+</i>
+                    <p class="title-m">Weight and Dimensions</p>
+                  </div>
+                  <div class="drop-block__content js-drop-block-content">
+                    <!--begin list-->
+                    <div class="list list--marg-small">
+                      <ul>
+                        <li>Mechanical touch button initiates voice call and simultaneous data transmission to call center</li>
+                        <li>On board sensors for free fall and three dimensional (3D) space analysis using proprietary algorithms</li>
+                        <li>Fall detection analysis and identification using cloud based algorithms and class libraries</li>
+                      </ul>
+                    </div>
+                    <!--end list-->
+                  </div>
+                </div>
+                <!--end drop-block -->
+                <!--begin drop-block -->
+                <div class="drop-block  js-drop-block ">
+                  <div class="drop-block__title js-drop-block-toggler"> <i class="drop-block__icon">
+<svg class="icon icon-arrow-r"><use xlink:href="img/sprite.svg#icon-arrow-r"></use></svg>
+</i>
+                    <p class="title-m">Environment</p>
+                  </div>
+                  <div class="drop-block__content js-drop-block-content">
+                    <!--begin list-->
+                    <div class="list list--marg-small">
+                      <ul>
+                        <li>Mechanical touch button initiates voice call and simultaneous data transmission to call center</li>
+                        <li>On board sensors for free fall and three dimensional (3D) space analysis using proprietary algorithms</li>
+                        <li>Fall detection analysis and identification using cloud based algorithms and class libraries</li>
+                      </ul>
+                    </div>
+                    <!--end list-->
+                  </div>
+                </div>
+                <!--end drop-block -->
+                <!--begin drop-block -->
+                <div class="drop-block  js-drop-block ">
+                  <div class="drop-block__title js-drop-block-toggler"> <i class="drop-block__icon">
+<svg class="icon icon-arrow-r"><use xlink:href="img/sprite.svg#icon-arrow-r"></use></svg>
+</i>
+                    <p class="title-m">Certifications</p>
+                  </div>
+                  <div class="drop-block__content js-drop-block-content">
+                    <!--begin list-->
+                    <div class="list list--marg-small">
+                      <ul>
+                        <li>Mechanical touch button initiates voice call and simultaneous data transmission to call center</li>
+                        <li>On board sensors for free fall and three dimensional (3D) space analysis using proprietary algorithms</li>
+                        <li>Fall detection analysis and identification using cloud based algorithms and class libraries</li>
+                      </ul>
+                    </div>
+                    <!--end list-->
+                  </div>
+                </div>
+                <!--end drop-block -->
               </div>
+              <!--end dropdowns-section__right-->
             </div>
-            <div class="slider__slide slide">
-              <div class="slider__img"> <img src="img/slider-img.jpg" alt="alt"> </div>
-              <div class="slider__text-side">
-                <p class="slider__title">DeeDee — AR</p>
-                <div class="slider__text"> After researching many &quot;help&quot; systems for my parents, we chose Alert1. It was the best decision we ever made! I cannot express how wonderful the people are and the caring manner in which they treat you. Trust me when I say that
-                  Alert1 gives us total Peace of Mind! </div>
+            <!--end dropdowns-section__inner-->
+          </div>
+          <!--end l-->
+        </div>
+        <!--end dropdowns-section-->
+        <div class="section section--border-top">
+          <!--begin l-->
+          <div class="l">
+            <div class="border-block">
+              <h2 class="title-lg border-block__title">30 Day Refund Policy</h2>
+              <div class="border-block__content">
+                <p>Alert1 offers multiple payment plans so you can choose the service that best meets your needs for price and flexibility. Our members are never locked into a multi-year contract. You may cancel your service at any time, without any cancellation
+                  charges.</p>
+                <p>To qualify for a refund, new members must subscribe to an annual or semi-annual service plan, use the medical alert device to place a successful test call to the Command Center and return the device in its original condition within 30
+                  days of initial purchase. Any pre-paid shipping, warranty and activation fees are non-refundable.</p>
+                <div class="border-block__icon"> <svg class="icon icon-medal"><use xlink:href="img/sprite.svg#icon-medal"></use></svg> </div>
               </div>
             </div>
           </div>
+          <!--end l-->
         </div>
-        <!--end l-->
-      </section>
-      <!--begin prod-questions-->
-      <div class="prod-questions">
-        <!--begin l-->
-        <div class="l">
-          <!--begin prod-questions-->
-          <div class="prod-questions__inner">
-            <!--begin prod-question-->
-            <div class="prod-question ">
-              <div class="prod-question__inner"> <img src="img/question-img1.jpg" alt="alt">
-                <h4 class="title-m title-m--fatter prod-question__title">Fall Detection Protection On The Go</h4>
-                <div class="prod-question__text">
-                  <p>No phone? No problem. No base unit, cell phone, or landline phone is necessary with Kelsi Pro automatic fall detection systems.</p>
-                  <p>Kelsi Pro uses a microphone and speaker to enable simple, 2-way communication to the Alert1 Command Center.</p>
-                  <p>GPS, Wi-Fi, and cellular coverage is used in your mobile medical alert to find you if you don`t know where you are.</p>
-                  <p>Automatic fall detection technology senses falls and automatically notifies the Command Center.</p>
-                </div>
-              </div>
-            </div>
-            <!--end prod-question-->
-            <!--begin prod-question-->
-            <div class="prod-question prod-question--img-left">
-              <div class="prod-question__inner"> <img src="img/question-img2.jpg" alt="alt">
-                <h4 class="title-m title-m--fatter prod-question__title">What Is Mobile Fall Detection?</h4>
-                <div class="prod-question__text">
-                  <p>Kelsi Pro provides mobile automatic fall detection. This GPS fall alert system contains sensors that are designed to differentiate between a fall and ordinary movements.</p> <br><br>
-                  <p>The mobile fall detection pendant is worn around your neck or clipped at the waist. If it senses a fall or you press the help button, you will be connected to a kind and compassionate US-based operator from an Alert1 Command Center.</p>
-                </div>
-              </div>
-            </div>
-            <!--end prod-question-->
-            <!--begin prod-question-->
-            <div class="prod-question ">
-              <div class="prod-question__inner"> <img src="img/question-img3.jpg" alt="alt">
-                <h4 class="title-m title-m--fatter prod-question__title">What If I Don’t Know Where I Am?</h4>
-                <div class="prod-question__text">
-                  <p>Once you press your mobile help button, we use GPS, Wi-Fi, and cellular coverage to locate you. We then alert your emergency responders so they can come to your aid. </p><br><br>
-                  <p>If your responders aren’t available, we will contact local 911 emergency services to help you. We stay on the line as you wait for emergency responders to help in your time of need.</p>
-                </div>
-              </div>
-            </div>
-            <!--end prod-question-->
+        <div class="line-block line-block--mb-none">
+          <!--begin l-->
+          <div class="l">
+            <div class="line-block__inner"> Call us today at <a href="tel:1-877-959-8354">1-877-959-8354</a> to get peace of mind with Alert1 </div>
           </div>
-          <!--end prod-questions-->
+          <!--end l-->
         </div>
-        <!--end l-->
-      </div>
-      <!--end prod-questions-->
-      <!--begin user-section-->
-      <div class="user-section ">
-        <!--begin l-->
-        <div class="l">
-          <div class="user-section__inner">
-            <h2 class="title-lg">Reviews</h2>
-            <div class="user-block user-block--review">
-              <div class="user-block__rate-line">
-                <h4 class="title-m title-m--fatter user-block__spec-title">Couldn`t ask for better service</h4>
-                <div class="star-ratings "> <span style="width:45%" class="star-ratings__full"></span> </div>
+        <section class="section  section--border-bottom section--big-padding-bottom section--mb">
+          <!--begin l-->
+          <div class="l">
+            <h2 class="title-lg section__title section__title--mb-big">Feedback from our customers</h2>
+            <div class="slider js-slider">
+              <div class="slider__slide slide">
+                <div class="slider__img"> <img src="img/slider-img.jpg" alt="alt"> </div>
+                <div class="slider__text-side">
+                  <p class="slider__title">DeeDee — AR</p>
+                  <div class="slider__text"> After researching many &quot;help&quot; systems for my parents, we chose Alert1. It was the best decision we ever made! I cannot express how wonderful the people are and the caring manner in which they treat you. Trust me when I say
+                    that Alert1 gives us total Peace of Mind! </div>
+                </div>
               </div>
-              <p class="user-block__name">Phil (Findlay, OH)</p>
-              <p class="user-block__text">Once again Alert1 performed excellent. Mom fell again. They called the paramedics, then my brother then me just like we planned. Mom was ok this time but I couldn’t ask for better service from Alert1.</p>
-              <p class="user-block__date">Posted on 11/3/2017</p>
+              <div class="slider__slide slide">
+                <div class="slider__img"> <img src="img/slider-img.jpg" alt="alt"> </div>
+                <div class="slider__text-side">
+                  <p class="slider__title">DeeDee — AR</p>
+                  <div class="slider__text"> After researching many &quot;help&quot; systems for my parents, we chose Alert1. It was the best decision we ever made! I cannot express how wonderful the people are and the caring manner in which they treat you. Trust me when I say
+                    that Alert1 gives us total Peace of Mind! </div>
+                </div>
+              </div>
             </div>
-            <div class="user-block user-block--review">
-              <div class="user-block__rate-line">
-                <h4 class="title-m title-m--fatter user-block__spec-title">Couldn`t ask for better service</h4>
-                <div class="star-ratings "> <span style="width:45%" class="star-ratings__full"></span> </div>
-              </div>
-              <p class="user-block__name">Phil (Findlay, OH)</p>
-              <p class="user-block__text">Once again Alert1 performed excellent. Mom fell again. They called the paramedics, then my brother then me just like we planned. Mom was ok this time but I couldn’t ask for better service from Alert1.</p>
-              <p class="user-block__date">Posted on 11/3/2017</p>
-            </div>
-            <div class="user-block user-block--review">
-              <div class="user-block__rate-line">
-                <h4 class="title-m title-m--fatter user-block__spec-title">Couldn`t ask for better service</h4>
-                <div class="star-ratings "> <span style="width:45%" class="star-ratings__full"></span> </div>
-              </div>
-              <p class="user-block__name">Phil (Findlay, OH)</p>
-              <p class="user-block__text">Once again Alert1 performed excellent. Mom fell again. They called the paramedics, then my brother then me just like we planned. Mom was ok this time but I couldn’t ask for better service from Alert1.</p>
-              <p class="user-block__date">Posted on 11/3/2017</p>
-            </div>
-            <div class="user-block user-block--review">
-              <div class="user-block__rate-line">
-                <h4 class="title-m title-m--fatter user-block__spec-title">Couldn`t ask for better service</h4>
-                <div class="star-ratings "> <span style="width:45%" class="star-ratings__full"></span> </div>
-              </div>
-              <p class="user-block__name">Phil (Findlay, OH)</p>
-              <p class="user-block__text">Once again Alert1 performed excellent. Mom fell again. They called the paramedics, then my brother then me just like we planned. Mom was ok this time but I couldn’t ask for better service from Alert1.</p>
-              <p class="user-block__date">Posted on 11/3/2017</p>
-            </div> <button class="btn btn--m user-section__btn">Add a review</button>
-            <div class="centered"> <a class="link-underline" href="#">Show more</a> </div>
           </div>
+          <!--end l-->
+        </section>
+        <!--begin prod-questions-->
+        <div class="prod-questions">
+          <!--begin l-->
+          <div class="l">
+            <!--begin prod-questions-->
+            <div class="prod-questions__inner">
+              <!--begin prod-question-->
+              <div class="prod-question ">
+                <div class="prod-question__inner"> <img src="img/question-img1.jpg" alt="alt">
+                  <h4 class="title-m title-m--fatter prod-question__title">Fall Detection Protection On The Go</h4>
+                  <div class="prod-question__text">
+                    <p>No phone? No problem. No base unit, cell phone, or landline phone is necessary with Kelsi Pro automatic fall detection systems.</p>
+                    <p>Kelsi Pro uses a microphone and speaker to enable simple, 2-way communication to the Alert1 Command Center.</p>
+                    <p>GPS, Wi-Fi, and cellular coverage is used in your mobile medical alert to find you if you don`t know where you are.</p>
+                    <p>Automatic fall detection technology senses falls and automatically notifies the Command Center.</p>
+                  </div>
+                </div>
+              </div>
+              <!--end prod-question-->
+              <!--begin prod-question-->
+              <div class="prod-question prod-question--img-left">
+                <div class="prod-question__inner"> <img src="img/question-img2.jpg" alt="alt">
+                  <h4 class="title-m title-m--fatter prod-question__title">What Is Mobile Fall Detection?</h4>
+                  <div class="prod-question__text">
+                    <p>Kelsi Pro provides mobile automatic fall detection. This GPS fall alert system contains sensors that are designed to differentiate between a fall and ordinary movements.</p> <br><br>
+                    <p>The mobile fall detection pendant is worn around your neck or clipped at the waist. If it senses a fall or you press the help button, you will be connected to a kind and compassionate US-based operator from an Alert1 Command Center.</p>
+                  </div>
+                </div>
+              </div>
+              <!--end prod-question-->
+              <!--begin prod-question-->
+              <div class="prod-question ">
+                <div class="prod-question__inner"> <img src="img/question-img3.jpg" alt="alt">
+                  <h4 class="title-m title-m--fatter prod-question__title">What If I Don’t Know Where I Am?</h4>
+                  <div class="prod-question__text">
+                    <p>Once you press your mobile help button, we use GPS, Wi-Fi, and cellular coverage to locate you. We then alert your emergency responders so they can come to your aid. </p><br><br>
+                    <p>If your responders aren’t available, we will contact local 911 emergency services to help you. We stay on the line as you wait for emergency responders to help in your time of need.</p>
+                  </div>
+                </div>
+              </div>
+              <!--end prod-question-->
+            </div>
+            <!--end prod-questions-->
+          </div>
+          <!--end l-->
         </div>
-        <!--end l-->
+        <!--end prod-questions-->
+        <!--begin user-section-->
+        <div class="user-section ">
+          <!--begin l-->
+          <div class="l">
+            <div class="user-section__inner">
+              <h2 class="title-lg">Reviews</h2>
+              <div class="user-block user-block--review" itemprop="review" itemscope itemtype="http://schema.org/Review">
+                <div class="user-block__rate-line">
+                  <h4 class="title-m title-m--fatter user-block__spec-title"> <span itemprop="name">Couldn`t ask for better service</span> Couldn`t ask for better service</h4>
+                  <div class="star-ratings " itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+                    <meta itemprop="worstRating" content="1"> <span class="hidden" itemprop="ratingValue">4</span> <span class="hidden" itemprop="bestRating">5</span> <span style="width:45%" class="star-ratings__full"></span> </div>
+                </div>
+                <p class="user-block__name" itemprop="author">Phil (Findlay, OH)</p>
+                <p class="user-block__text" itemprop="description">Once again Alert1 performed excellent. Mom fell again. They called the paramedics, then my brother then me just like we planned. Mom was ok this time but I couldn’t ask for better service from Alert1.</p>
+                <p class="user-block__date">
+                  <meta itemprop="datePublished" content="Posted on 11/3/2017"> Posted on 11/3/2017</p>
+              </div>
+              <div class="user-block user-block--review" itemprop="review" itemscope itemtype="http://schema.org/Review">
+                <div class="user-block__rate-line">
+                  <h4 class="title-m title-m--fatter user-block__spec-title"> <span itemprop="name">Couldn`t ask for better service</span> Couldn`t ask for better service</h4>
+                  <div class="star-ratings " itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+                    <meta itemprop="worstRating" content="1"> <span class="hidden" itemprop="ratingValue">4</span> <span class="hidden" itemprop="bestRating">5</span> <span style="width:45%" class="star-ratings__full"></span> </div>
+                </div>
+                <p class="user-block__name" itemprop="author">Phil (Findlay, OH)</p>
+                <p class="user-block__text" itemprop="description">Once again Alert1 performed excellent. Mom fell again. They called the paramedics, then my brother then me just like we planned. Mom was ok this time but I couldn’t ask for better service from Alert1.</p>
+                <p class="user-block__date">
+                  <meta itemprop="datePublished" content="Posted on 11/3/2017"> Posted on 11/3/2017</p>
+              </div>
+              <div class="user-block user-block--review" itemprop="review" itemscope itemtype="http://schema.org/Review">
+                <div class="user-block__rate-line">
+                  <h4 class="title-m title-m--fatter user-block__spec-title"> <span itemprop="name">Couldn`t ask for better service</span> Couldn`t ask for better service</h4>
+                  <div class="star-ratings " itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+                    <meta itemprop="worstRating" content="1"> <span class="hidden" itemprop="ratingValue">4</span> <span class="hidden" itemprop="bestRating">5</span> <span style="width:45%" class="star-ratings__full"></span> </div>
+                </div>
+                <p class="user-block__name" itemprop="author">Phil (Findlay, OH)</p>
+                <p class="user-block__text" itemprop="description">Once again Alert1 performed excellent. Mom fell again. They called the paramedics, then my brother then me just like we planned. Mom was ok this time but I couldn’t ask for better service from Alert1.</p>
+                <p class="user-block__date">
+                  <meta itemprop="datePublished" content="Posted on 11/3/2017"> Posted on 11/3/2017</p>
+              </div>
+              <div class="user-block user-block--review" itemprop="review" itemscope itemtype="http://schema.org/Review">
+                <div class="user-block__rate-line">
+                  <h4 class="title-m title-m--fatter user-block__spec-title"> <span itemprop="name">Couldn`t ask for better service</span> Couldn`t ask for better service</h4>
+                  <div class="star-ratings " itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+                    <meta itemprop="worstRating" content="1"> <span class="hidden" itemprop="ratingValue">4</span> <span class="hidden" itemprop="bestRating">5</span> <span style="width:45%" class="star-ratings__full"></span> </div>
+                </div>
+                <p class="user-block__name" itemprop="author">Phil (Findlay, OH)</p>
+                <p class="user-block__text" itemprop="description">Once again Alert1 performed excellent. Mom fell again. They called the paramedics, then my brother then me just like we planned. Mom was ok this time but I couldn’t ask for better service from Alert1.</p>
+                <p class="user-block__date">
+                  <meta itemprop="datePublished" content="Posted on 11/3/2017"> Posted on 11/3/2017</p>
+              </div> <button class="btn btn--m user-section__btn">Add a review</button>
+              <div class="centered"> <a class="link-underline" href="#">Show more</a> </div>
+            </div>
+          </div>
+          <!--end l-->
+        </div>
+        <!--end user-section-->
+        <!--end content-block product-page-->
       </div>
-      <!--end user-section-->
-      <!--end content-block product-page-->
       <footer class="footer">
         <!--begin l-->
         <div class="l">

@@ -1,11 +1,18 @@
-<div class="user-block {{item.mode}}">
+<div class="user-block {{item.mode}}" {% if item.review %}itemprop="review" itemscope itemtype="http://schema.org/Review"{% endif %}>
 	{% if item.title %}
 	<div class="user-block__rate-line">
-	<h4 class="title-m title-m--fatter user-block__spec-title">{{item.title}}</h4>
-		{% include "components/_star-rating.html" %}
+		<h4 class="title-m title-m--fatter user-block__spec-title">{% if item.review %} <span itemprop="name">{{item.title}}</span> {% endif %} {{item.title}}</h4>
+		<div class="star-ratings " itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+			<meta itemprop="worstRating" content = "1">
+			<span class="hidden" itemprop="ratingValue">4</span>
+			<span class="hidden" itemprop="bestRating">5</span>
+			<span style="width:45%" class="star-ratings__full"></span>
+		</div>
 	</div>
 	{% endif %}
-	<p class="user-block__name">{{item.name}}</p>
-	<p class="user-block__text">{{item.text}}</p>
-	<p class="user-block__date">{{item.date}}</p>
+	<p class="user-block__name" {% if item.review %}itemprop="author"{% endif %}>{{item.name}}</p>
+	<p class="user-block__text"{% if item.review %}itemprop="description"{% endif %}>{{item.text}}</p>
+	<p class="user-block__date">{% if item.review %}<meta itemprop="datePublished" content="{{item.date}}">{% endif %} {{item.date}}</p>
 </div>
+
+{% if item.review %}{% endif %}

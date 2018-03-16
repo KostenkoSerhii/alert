@@ -1,5 +1,6 @@
 ---
-title: product page
+title: 'Kelsi Pro Product Features'
+description: 'Automatically detects falls and calls for help Custom emergency responders- you decide who we call Uses GPS, Wi-Fi, and cellular coverage to locate you if a fall is detected or button is pushed'
 listLeft: [
 {
 	listMode: 'list--marg-small',
@@ -336,6 +337,7 @@ btn: 'Add a review',
 userBlocks: [
 {
 	mode: 'user-block--review',
+	review: true,
 	title: 'Couldn`t ask for better service',
 	name: 'Phil (Findlay, OH)',
 	text: 'Once again Alert1 performed excellent. Mom fell again. They called the paramedics, then my brother then me just like we planned. Mom was ok this time but I couldn’t ask for better service from Alert1.',
@@ -343,6 +345,7 @@ userBlocks: [
 },
 {
 	mode: 'user-block--review',
+	review: true,
 	title: 'Couldn`t ask for better service',
 	name: 'Phil (Findlay, OH)',
 	text: 'Once again Alert1 performed excellent. Mom fell again. They called the paramedics, then my brother then me just like we planned. Mom was ok this time but I couldn’t ask for better service from Alert1.',
@@ -350,6 +353,7 @@ userBlocks: [
 },
 {
 	mode: 'user-block--review',
+	review: true,
 	title: 'Couldn`t ask for better service',
 	name: 'Phil (Findlay, OH)',
 	text: 'Once again Alert1 performed excellent. Mom fell again. They called the paramedics, then my brother then me just like we planned. Mom was ok this time but I couldn’t ask for better service from Alert1.',
@@ -357,6 +361,7 @@ userBlocks: [
 },
 {
 	mode: 'user-block--review',
+	review: true,
 	title: 'Couldn`t ask for better service',
 	name: 'Phil (Findlay, OH)',
 	text: 'Once again Alert1 performed excellent. Mom fell again. They called the paramedics, then my brother then me just like we planned. Mom was ok this time but I couldn’t ask for better service from Alert1.',
@@ -369,7 +374,7 @@ userBlocks: [
 
 {% block content %}
 <!--begin content-block product-page-->
-<div class="content-block prod-page">
+<div class="content-block prod-page" itemscope itemtype="http://schema.org/Product">
 	<!--begin l-->
 	<div class="l">
 		<div class="prod-page__top">
@@ -382,11 +387,14 @@ userBlocks: [
 			</div>
 			<!--begin prod-page__desrc-side-->
 			<div class="prod-page__desrc-side">
-				<h1 class="title-lg prod-page__title">Kelsi Pro: On-the-Go Fall Detection</h1>
+				<h1 class="title-lg prod-page__title" itemprop="name">Kelsi Pro: On-the-Go Fall Detection</h1>
 				<p class="title-sm title-line">No landline required</p>
-				<div class="prod-rating">
-					{% include "components/_star-rating.html" %}
-					<span class="prod-rating__count">(199 reviews) </span>
+				<div class="prod-rating" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+					<div class="star-ratings ">
+						<span style="width:45%" class="star-ratings__full"></span>
+						<span class="star-ratings__hidden" itemprop="ratingValue">4</span>
+					</div>
+					<span class="prod-rating__count">(<span itemprop="reviewCount">199</span> reviews) </span>
 					<span class="prod-rating__text">In Stock</span>
 				</div>
 				<div class="prod-form">
@@ -407,27 +415,27 @@ userBlocks: [
 						<p class="prod-form__text">Select your payment plan:</p>
 						<!--begin prod-form__line-->
 						<div class="prod-form__line">
-							<div class="prod-form__block">
+							<div class="prod-form__block" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
 								<input type="radio" name="payment" id="payment1" checked>
 								<label for="payment1"><span>Pay annually</span></label>
 								<div class="prod-form__price">
-									$41.95/month
+									<span itemprop="priceCurrency" content="USD">$</span><span itemprop="price" content="41.95">41.95</span>/month
 									<p>2 FREE months</p>
 								</div>
 							</div>
-							<div class="prod-form__block">
+							<div class="prod-form__block" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
 								<input type="radio" name="payment" id="payment2">
 								<label for="payment2"><span>Pay <br> semi - annually</span></label>
 								<div class="prod-form__price">
-									$41.95/month
+									<span itemprop="priceCurrency" content="USD">$</span><span itemprop="price" content="41.95">41.95</span>/month
 									<p>1 FREE months</p>
 								</div>
 							</div>
-							<div class="prod-form__block">
+							<div class="prod-form__block" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
 								<input type="radio" name="payment" id="payment3">
 								<label for="payment3"><span>Pay quarterly</span></label>
 								<div class="prod-form__price">
-									$47.95/month
+									<span itemprop="priceCurrency" content="USD">$</span><span itemprop="price" content="47.95">47.95</span>/month
 								</div>
 							</div>
 						</div>
@@ -443,7 +451,7 @@ userBlocks: [
 			<!--end prod-page__desrc-side-->
 		</div>
 		<!--begin two-col-->
-		<div class="two-col prod-page__two-col">
+		<div class="two-col prod-page__two-col"  itemprop="description">
 			<div class="two-col__left">
 				{% for globItem in listLeft %}
 				{% include "components/_list.html" %}
@@ -460,33 +468,34 @@ userBlocks: [
 	<!--end l-->
 	{% include "components/_how-work.html" %}
 	{% include "components/_prod-lists.html" %}
-</div>
-{% include "components/_line-block.html" %}
-{% include "components/_prod-dropdowns.html" %}
-{% include "components/_spec-border-block.html" %}
-<div class="line-block line-block--mb-none">
-	<!--begin l-->
-	<div class="l">
-		<div class="line-block__inner"> Call us today at <a href="tel:1-877-959-8354">1-877-959-8354</a> to get peace of mind with Alert1 </div>
-	</div>
-	<!--end l-->
-</div>
-{% include "components/_slider.html" %}
-<!--begin prod-questions-->
-<div class="prod-questions">
-	<!--begin l-->
-	<div class="l">
-		<!--begin prod-questions-->
-		<div class="prod-questions__inner">
-			{% for item in questions %}
-			{% include "components/_prod-question.html" %}
-			{% endfor %}
+
+	{% include "components/_line-block.html" %}
+	{% include "components/_prod-dropdowns.html" %}
+	{% include "components/_spec-border-block.html" %}
+	<div class="line-block line-block--mb-none">
+		<!--begin l-->
+		<div class="l">
+			<div class="line-block__inner"> Call us today at <a href="tel:1-877-959-8354">1-877-959-8354</a> to get peace of mind with Alert1 </div>
 		</div>
-		<!--end prod-questions-->
+		<!--end l-->
 	</div>
-	<!--end l-->
+	{% include "components/_slider.html" %}
+	<!--begin prod-questions-->
+	<div class="prod-questions">
+		<!--begin l-->
+		<div class="l">
+			<!--begin prod-questions-->
+			<div class="prod-questions__inner">
+				{% for item in questions %}
+				{% include "components/_prod-question.html" %}
+				{% endfor %}
+			</div>
+			<!--end prod-questions-->
+		</div>
+		<!--end l-->
+	</div>
+	<!--end prod-questions-->
+	{% include "components/_user-section.html" %}
+	<!--end content-block product-page-->
 </div>
-<!--end prod-questions-->
-{% include "components/_user-section.html" %}
-<!--end content-block product-page-->
 {% endblock %}
