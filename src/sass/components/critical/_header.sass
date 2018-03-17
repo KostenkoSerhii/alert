@@ -5,10 +5,19 @@
 	width: 100%
 	top: 19px
 	overflow: hidden
+	+sm
+		top: 10px
+		position: absolute
+		left: 0
+		width: 100%
 	&__inner
 		display: flex
+		+sm
+			flex-wrap: wrap
+			justify-content: center
 	&__menu, &__phone
 		position: relative
+		
 		&:before
 			content: ''
 			position: absolute
@@ -21,16 +30,36 @@
 		padding-left: 171px
 		flex-grow: 1
 		margin-right: 15px
+		+lg
+			padding-left: 20px
+		+sm
+			flex-basis: 100%
+			padding-left: 0
+			order: 1
+			text-align: center
+			margin-right: 0
 		&:before
 			background: $blue
 			right: 0
+			+sm
+				right: -50%
+				transform: transalteX(50%)
 	&__menu-item
 		display: inline-block
 		vertical-align: top
 		margin-right: 55px
 		&:last-of-type
 			margin-right: 0
-		&.is-active, &:hover
+		+md
+			margin-right: 25px
+		+sm
+			margin-right: 20px
+		+rmin(1023)
+			&:hover
+				a
+					&:after
+						opacity: 1
+		&.is-active
 			a
 				&:after
 					opacity: 1
@@ -41,6 +70,11 @@
 			display: block
 			padding: 17px 0 16px
 			position: relative
+			+md
+				padding: 10px 0
+			+sm
+				font-size: 15px
+
 			&:after
 				content: ''
 				position: absolute
@@ -58,17 +92,22 @@
 		+robc-b
 		background: $green
 		display: block
+		+sm
+			margin-bottom: 20px
 		&:before
 			background: $blue
 			transform: translateX(100%)
 			right: -15px
-		
+			+sm
+				display: none
 
 .phone
 	color: $white
 	font-size: 30px
 	position: relative
 	padding-left: 65px
+	+md
+		font-size: 20px
 	i
 		display: block
 		font-size: 0

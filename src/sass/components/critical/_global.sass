@@ -1,22 +1,44 @@
 .content-block
 	padding-top: 144px
+	+md
+		padding-top: 120px
+	+sm
+		padding-top: 150px
 .article
 	&__cols
 		+clr
 		margin-bottom: 23px
-		&--mb-big
-			margin-bottom: 70px
-	&__left
-		float: left
-		width: percentage(655 / 1140)
+		+sm
+			margin-bottom: 10px
 		.title-line
 			text-align: left
 			margin-bottom: 48px
+			+md
+				font-size: 25px
+			+sm
+				font-size: 20px
+		&--mb-big
+			margin-bottom: 70px
+			+md
+				margin-bottom: 50px
+			+sm
+				margin-bottom: 30px
+	&__left, &__right
+		+sm
+			float: none
+			width: 100%
+			margin-bottom: 20px
+	&__left
+		float: left
+		width: percentage(655 / 1140)
+
 	&__right
 		float: right
 		width: percentage(457 / 1140)
 		text-align: right
 		font-size: 0
+		+sm
+			text-align: center
 		img
 			max-width: 100%
 			max-height: 700px
@@ -38,10 +60,18 @@
 		+robc-b
 		font-size: 36px
 		margin-bottom: 8px
+		+md
+			font-size: 20px
+		+sm
+			font-size: 18px
 	h3
 		font-size: 24px
 		+rob-m
 		margin-bottom: 9px
+		+md
+			font-size: 18px
+		+sm
+			font-size: 16px
 .decor-text
 	padding-left: 19px
 	border-left: 1px solid $green
@@ -54,6 +84,10 @@ blockquote
 	position: relative
 	max-width: 715px
 	margin: 0 auto 46px
+	+md
+		font-size: 18px
+	+sm
+		font-size: 16px
 	&:before, &:after
 		content: ''
 		position: absolute

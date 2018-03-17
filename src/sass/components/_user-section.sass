@@ -1,31 +1,60 @@
 .user-section
 	margin-bottom: 71px
+	+md
+		margin-bottom: 50px
+
 	&--comments
 		margin-top: 36px
 		margin-bottom: 55px
+		+sm
+			margin-bottom: 25px
 		.l
 			border-top: 2px solid  whitesmoke
 			padding-top: 32px
+			+md
+				padding-top: 20px
+			+sm
+				padding-top: 10px
 		.user-section__inner
 			padding-left: 0
 		.user-block
 			margin-bottom: 40px
+			+sm
+				margin-bottom: 25px
 	&__inner
 		padding-left: 98px
 		position: relative
+		+md
+			padding-left: 0
 	&__btn
 		position: absolute
 		right: 0
 		top: 0
+		+md
+			top: -5px
+		+sm
+			position: static
+			max-width: 200px
+			display: block
+			margin: 25px auto 0
 	.title-lg
 		padding-right: 98px
 		margin-bottom: 37px
+		+sm
+			padding-right: 0
 	.title-line
 		padding-top: 10px
 		margin-bottom: 51px
+		+md
+			margin-bottom: 30px
+
 
 .user-block
 	margin-bottom: 51px
+	+md
+		margin-bottom: 40px
+	+sm
+		margin-bottom: 25px
 	&--review
 		.user-block__text, .user-block__date
 			color: $blue-d
@@ -36,11 +65,21 @@
 		display: inline-block
 		vertical-align: top
 		margin-right: 70px
+		+sm
+			margin-right: 0
+			margin-bottom: 10px
 	&__name
 		font-size: 24px
 		margin-bottom: 12px
+		+md
+			font-size: 20px
+		+sm
+			font-size: 16px
 	&__text, &__date
 	&__text
 		margin-bottom: 10px
 	.star-ratings 
 		margin-top: 3px
+		+sm
+			display: block
+			margin-bottom: 10px

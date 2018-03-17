@@ -3,16 +3,17 @@
 	<!--begin l-->
 	<div class="l">
 		<div class="user-section__inner">
-		{{userSection.title| safe}}
-		{% for item in userSection.userBlocks %}
-		{% include "components/_user-block.html" %}
-		{% endfor %}
-		<button class="btn btn--m user-section__btn">{{userSection.btn}}</button>
-		{% if userSection.moreLink %}
-		<div class="centered">
-			<a class="link-underline" href="#">{{userSection.moreLink}}</a>
-		</div>
-		{% endif %}
+			{{userSection.title| safe}}
+			{% for item in userSection.userBlocks %}
+			{% include "components/_user-block.html" %}
+			{% endfor %}
+
+			{% if userSection.moreLink %}
+			<div class="centered">
+				<a class="link-underline" href="#">{{userSection.moreLink}}</a>
+			</div>
+			{% endif %}
+			<button class="btn btn--m user-section__btn">{{userSection.btn}}</button>
 		</div>
 	</div>
 	<!--end l-->

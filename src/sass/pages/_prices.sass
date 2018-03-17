@@ -7,16 +7,26 @@
 		padding-bottom: 18px
 		border-bottom: 1px solid $green
 		margin-bottom: 42px
+		+sm
+			display: block
 		a, span
 			margin:  0 30px
+			+sm
+				margin: 0
 		span
 			color: $blue
+			+sm
+				display: block
+				margin-bottom: 10px
 		a
 			font-size: 24px
 			+rob-m
 			color: $blue-d
 			+trans
 			position: relative
+			+sm
+				font-size: 18px
+				margin-right: 10px
 			&:after
 				content: ''
 				position: absolute
@@ -27,10 +37,14 @@
 				+trans
 				left: 0
 				bottom: -5px
-			&:hover, &.is-active
+			&.is-active
 				color: $green
 				&:after
 					opacity: 1
+			+rmin(1024)
+				&:hover
+					&:after
+						opacity: 1
 	&__inner
 		+clr
 		// display: flex
@@ -42,6 +56,12 @@
 		width: 180px
 		// flex-basis: 180px
 		padding-right: 15px
+		+lg
+			width: 165px
+		+sm
+			padding-right: 10px
+			width: 110px
+			font-size: 12px
 	&__option
 		color: $blue-d
 		
@@ -53,6 +73,11 @@
 		
 		padding-left: 13px
 		overflow-x: auto
+		+lg
+			padding-left: 0
+			width: calc(100% - 165px)
+		+sm
+			width: calc(100% - 110px)
 	&__list
 		// width: 947px
 		overflow-x: auto
@@ -61,20 +86,35 @@
 .compare__option, .prod-item__compare-value
 	margin-bottom: 16px
 	min-height: 76px
+	+lg
+		min-height: 34px
+		margin-bottom: 10px
 	&--big
 		height: 239px
 		margin-bottom: 0
+		+lg
+			height: 200px
+		+sm
+			height: 160px
 
 .compare__option
 	&--big
 		padding-top: 40px
 		font-size: 24px
+		+md
+			font-size: 18px
+		+sm
+			font-size: 14px
 .switch-value
 	display: none
 	&.is-active
 		display: block
 .video-section
 	padding: 68px 0
+	+md
+		padding: 40px 0
+	+sm
+		padding: 25px 0
 	&__text
 		margin-bottom: 25px
 		text-align: center
@@ -83,6 +123,12 @@
 		margin-left: auto
 		margin-right: auto
 		height: 530px
+		+m
+			max-width: 600px
+			height: 350px
+		+sm
+			max-width: 400px
+			height: 220px
 		iframe
 			display: block
 			width: 100%

@@ -2,6 +2,8 @@
 	.line-block 
 		margin-top: 91px
 		margin-bottom: 3px
+		+md
+			margin-top: 45px
 		&__inner
 			max-width: 955px
 		& + .prod-item
@@ -15,9 +17,25 @@
 			margin-bottom: 22px
 		.prod-item__img
 			margin-bottom: 49px
+			+sm
+				height: auto
 			&:after
 				width: 31px
 				bottom: -17px
+
+		.prod-item__inner
+			+sm
+				display: flex
+				flex-wrap: wrap
+		.prod-item__btn
+			+sm
+				display: none
+			&--mob
+				display: none
+				+sm
+					display: block
+					max-width: 200px
+					margin: 25px auto 0
 	&--compare
 		width: 165px
 		text-align: center
@@ -26,32 +44,47 @@
 		display: inline-block
 		vertical-align: top
 		white-space: normal
+		+lg
+			width: 120px
+		+m
+			margin-right: 10px
 		&:last-of-type
 			margin-right: 0
 		.prod-item__img
 			height: 152px
 			margin-bottom: 22px
+			+lg
+				height: 120px
+			+sm
+				height: 90px
 			&:after
 				width: 30px
 				bottom: -8px
 			img
 				max-width: 150px
 				max-height: 112px
+				+lg
+					max-width: 100%
 		.prod-item__title
 			font-size: 20px
 			+rob-l
 			margin-bottom: 0
+			+lg
+				font-size: 16px
 		.prod-item__price
 			margin-bottom: 0
 			color: $blue-d
 			+robc-b
 			font-size: 36px
+			+lg
+				font-size: 20px
 		.prod-item__btn
 			display: block
 			width: 100%
 			min-width: 100%
 			font-size: 20px
 			padding: 8px 12px
+
 	&--popular
 		.prod-item__price
 			color: $green
@@ -72,10 +105,27 @@
 		padding-bottom: 100px
 		min-height: 515px
 		+trans
+
 		&:nth-of-type(3n)
 			margin-right: 0
-		&:hover
-			box-shadow: 0 0 8px rgba(0, 0, 0, 0.14)
+		+rmin(1024)
+			&:hover
+				box-shadow: 0 0 8px rgba(0, 0, 0, 0.14)
+		+lg
+			flex-basis: 300px
+			min-height: 480px
+		+md
+			flex-basis: 30%
+			min-height: 400px
+		+sm
+			min-height: auto
+			padding-bottom: 70px
+			max-width: 280px
+			margin-left: auto
+			margin-bottom: 25px
+			margin-right: auto
+			&:nth-of-type(3n)
+				margin-right: auto
 		.prod-item__title
 			margin-bottom: 17px
 			padding: 0 5px
@@ -84,11 +134,33 @@
 			flex: 1
 			font-size: 24px
 			padding: 0 5px
+			+md
+				font-size: 16px
 		.prod-item__btn
 			position: absolute
 			bottom: 39px
 			left: 50%
 			transform: translateX(-50%)
+			+m
+				min-width: auto
+				width: 90%
+				margin: 0 auto
+			+sm
+				bottom: 15px
+		.prod-item__img
+			+lg
+				height: 200px
+				margin-bottom: 15px
+				img
+					max-height: 200px
+			+m
+				height: 165px
+				img
+					max-height: 165px
+			+ms
+				height: 155px
+				img
+					max-height: 155px
 	&__img
 		height: 241px
 		position: relative
@@ -97,6 +169,8 @@
 			img
 				position: relative
 				top: 40px
+				+sm
+					top: 0
 		&:after
 			content: ''
 			position: absolute
@@ -129,17 +203,44 @@
 		float: left
 		width: 360px
 		text-align: center
+		+sm
+			float: none
+			order: 1
+			margin: 0 auto
 	&__right
-		padding-top: 44px
 		padding-right: 95px
 		float: right
 		width: calc(100% - 390px)
+		+sm
+			order: 2
+			flex-basis: 100%
+		&--pt
+			padding-top: 44px
+			+sm
+				order: 0
+				text-align: center
+				padding-top: 15px
+			.title-line
+				+sm
+					margin-bottom: 10px
+					&:after
+						display: none
+		+md
+			padding-right: 40px
+		+m
+			padding-right: 0
+		+sm
+			float: none
+			width: 100%
+			
 
 	&__title
 		+rob
 		color: $blue
 		font-size: 28px
 		margin-bottom: 7px
+		+md
+			font-size: 18px
 	&__text
 		// a
 		// 	color: $blue
@@ -156,6 +257,8 @@
 			vertical-align: top
 			font-size: 0
 			margin-top: 10px
+			+lg
+				margin-top: 0px
 		svg
 			fill: $blue
 			font-size: 22px
@@ -164,3 +267,6 @@
 	flex-wrap: wrap
 	justify-content: center
 	margin-bottom: 26px
+	+sm
+		display: block
+		margin-bottom: 0

@@ -1,11 +1,18 @@
 .dropdowns-section
 	margin-bottom: 48px
+	+sm
+		margin-bottom: 25px
 	&__inner
 		+clr
+	&__left, &__right
+		+m
+			float: none
 	&__left
 		float: left
 		width: 263px
 		text-align: center
+		+m
+			margin: 0 auto 25px
 		img
 			max-width: 100%
 			max-height: 500px
@@ -14,6 +21,8 @@
 		float: left
 		max-width: 585px
 		padding-left: 30px
+		+m
+			max-width: 100%
 .drop-block
 	margin-bottom: 25px
 	&__title
@@ -38,7 +47,7 @@
 			height: 15px
 			fill: $white
 			position: relative
-			left: 1px
+			left: 0px
 			transform-origin: 50% 50%
 			+trans
 	&__content

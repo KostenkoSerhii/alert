@@ -1,16 +1,24 @@
 .how-work
 	display: flex
-	flex-wrap: wrap
+	// flex-wrap: wrap
 	justify-content: center
+	+sm
+		display: block
 .how-work-item
-	flex-basis: 360px
+	flex-basis: 31%
 	flex-grow: 0
 	flex-shrink: 1
 	margin-right: 30px
 	position: relative
 	margin-bottom: 60px
+	+sm
+		margin: 0 auto 35px
+		width: 100%
+		max-width: 450px
 	&:nth-of-type(3n)
 		margin-right: 0
+		+sm
+			margin-right: auto
 	&__img
 		width: 166px
 		height: 166px
@@ -48,5 +56,7 @@
 		transform: translateX(-50%)
 		right: -47%
 		top: 97px
+		+lg
+			display: none
 		&--top
 			top: 30px

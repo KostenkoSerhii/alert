@@ -6,19 +6,21 @@
 		{% endif %}
 		<div class="slider js-slider">
 
-				{% for slide in slider.slides %}
-				<div class="slider__slide slide">
+			{% for slide in slider.slides %}
+			<div class="slider__slide slide">
+				<!--begin slider__inner-->
+				<div class="slider__inner">
 					<div class="slider__img">
 						<img src="img/{{slide.img}}.jpg" alt="alt">
 					</div>
-					<div class="slider__text-side">
-						<p class="slider__title">{{slide.title}}</p>
-						<div class="slider__text">
-							{{slide.text}}
-						</div>
+					<p class="slider__title"><span>{{slide.title}}</span></p>
+					<div class="slider__text">
+						{{slide.text}}
 					</div>
 				</div>
-				{% endfor %}
+			</div>
+			<!--end slider__inner-->
+			{% endfor %}
 
 		</div>
 	</div>

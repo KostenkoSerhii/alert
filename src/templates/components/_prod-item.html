@@ -68,15 +68,20 @@
 		</div>
 		<!--end prod-item__left-->
 		<!--begin prod-item__right-->
-		<div class="prod-item__right">
-			<h2 class="title-l prod-item__title" itemprop="name">{{item.title}}</h2>
+		<div class="prod-item__right prod-item__right--pt">
+			<h2 class="title-l prod-item__title " itemprop="name">{{item.title}}</h2>
 			<p class="title-sm title-line">{{item.titleSec}}</p>
+		</div>
+		<!--end prod-item__right-->
+		<!--begin prod-item__right-->
+		<div class="prod-item__right">
 			<div class="prod-item__text article" itemprop="description">
 				{{item.text |safe}}
 			</div>
 			{% for globItem in item.list %}
 			{% include "components/_list.html" %}
 			{% endfor %}
+			<a href="#" class="btn prod-item__btn prod-item__btn--mob" itemprop="url">{{item.btn}}</a>
 		</div>
 		<!--end prod-item__right-->
 	</div>

@@ -1,16 +1,16 @@
 
-=lg
-	@media only screen and (max-width: "1199px")
-		@content
-=l
-	@media only screen and (max-width: "1023px")
-		@content
-=m
-	@media only screen and (max-width: "991px")
-		@content
-=xs
-	@media only screen and (max-width: "767px")
-		@content
+// =lg
+// 	@media only screen and (max-width: "1199px")
+// 		@content
+// =l
+// 	@media only screen and (max-width: "1023px")
+// 		@content
+// =m
+// 	@media only screen and (max-width: "991px")
+// 		@content
+// =xs
+// 	@media only screen and (max-width: "767px")
+// 		@content
 
 
 
@@ -26,6 +26,8 @@ body
 	+smooth-font
 	+rob-l
 	font-size: 20px
+	+md
+		font-size: 14px
 
 .title-l, .title-m, .title-sm
 	+rob
@@ -34,6 +36,10 @@ body
 	font-size: 80px
 	color: $blue-d
 	text-align: center
+	+md
+		font-size: 60px
+	+sm
+		font-size: 30px
 	span
 		display: block
 		color: $blue
@@ -42,23 +48,37 @@ body
 	+robc-b
 	font-size: 36px
 	text-align: center
+	+m
+		font-size: 28px
+	+sm
+		font-size: 20px
 	&--d
 		color: $blue-d
 	&--mb-48
 		margin-bottom: 48px
+		+sm
+			margin-bottom: 30px
 	&--mb-33
 		margin-bottom: 33px
+		+sm
+			margin-bottom: 20px
 .title-l
 	color: $blue
 	font-size: 28px
 .title-m
 	color: $blue-d
 	font-size: 24px
+	+md
+		font-size: 20px
+	+sm
+		font-size: 16px
 	&--fatter
 		+rob-m
 .title-sm
 	color: $blue-d
 	font-size: 20px
+	+m
+		font-size: 16px
 	&--fatter
 		+rob-m
 		color: $black
@@ -76,6 +96,8 @@ body
 .section
 	background: $blue-l
 	padding: 42px 0 54px
+	+md
+		padding: 25px 0
 	&--border-top
 		border-top: 1px solid $blue
 	&--border-bottom
@@ -86,18 +108,30 @@ body
 		padding-bottom: 37px
 	&--mb
 		margin-bottom: 75px
+		+md
+			margin-bottom: 40px
+		+sm
+			margin-bottom: 25px
 	&--text
 		padding-top: 45px
 		padding-bottom: 43px
 		font-size: 18px
+		+sm
+			font-size: 14px
 	&__title
 		margin-bottom: 50px
+		+md
+			margin-bottom: 25px
 		&--mb-big
 			margin-bottom: 61px
 .link-underline
 	color: $blue
 	font-size: 24px
 	position: relative
+	+m
+		font-size: 20px
+	+sm
+		font-size: 16px
 	&:after
 		content: ''
 		position: absolute
@@ -127,7 +161,6 @@ a.link-more
 .content-right
 	text-align: right
 .line-block
-	
 	text-align: center
 	background: $blue
 	margin-bottom: 40px
@@ -135,13 +168,20 @@ a.link-more
 	color: $white
 	font-size: 30px
 	line-height: 36px
+	+md
+		margin-bottom: 30px
+		font-size: 18px
 	&__inner
 		padding: 21px 0 28px
 		margin: 0 auto
+		+md
+			padding: 15px 0
 	a
 		color: $white
 		+robc-b
 		font-size: 36px
+		+md
+			font-size: 20px
 	&--mb-big
 		margin-bottom: 81px
 	&--mb-m
@@ -163,16 +203,26 @@ a.link-more
 	+clr
 	&__left, &__right
 		width: 50%
+		+sm
+			float: none
+			width: 100%
+			padding: 0
 	&__left
 		float: left
 		padding-right: 15px
+		+sm
+			margin-bottom: 25px
 		&--small
 			padding-left: 100px
+			+md
+				padding-left: 30px
 	&__right
 		float: right
 		padding-left: 15px
 		&--small
 			padding-right: 100px
+			+md
+				padding-right: 30px
 .list, .article ul
 	.title-sm
 		margin-bottom: 10px
@@ -180,6 +230,8 @@ a.link-more
 		position: relative
 		padding-left: 20px
 		margin-bottom: 20px
+		+md
+			margin-bottom: 10px
 		&:last-of-type
 			margin-bottom: 0
 		&:before
@@ -191,11 +243,16 @@ a.link-more
 			height: 10px
 			border-radius: 50%
 			background: $green
+			+md
+				top: 2px
 	&--marg-small
 		li
 			margin-bottom: 10px
 .hidden
 	display: none
-
-
-
+.hidden-sm
+	+sm
+		display: none
+.visible-sm
+	+sm
+		display: block

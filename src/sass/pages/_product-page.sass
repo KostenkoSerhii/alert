@@ -2,26 +2,53 @@
 	&__top
 		+clr
 		margin-bottom: 55px
+		+md
+			margin-bottom: 40px
+		+sm
+			margin-bottom: 25px
+	&__slider-side, &__desrc-side, &__title
+		+sm
+			float: none
+			
+			padding: 0
 	&__slider-side
 		width: percentage(360 / 1140)
 		float: left
 		padding-top: 8px
-	&__desrc-side
+		+sm
+			width: 258px
+			margin: 0 auto 20px
+	&__desrc-side, &__title
 		width: percentage(652 / 1140)
 		float: right
+		+md
+			width: 65%
+		+sm
+			width: 100%
 	&__help-block
 		font-size: 24px
+		+m
+			font-size: 18px
 		p
 			margin-bottom: 5px
 		a
 			font-size: 30px
 			color: $blue
 			+rob-m
+			+m
+				font-size: 20px
 	&__title
 		text-align: left
 		margin-bottom: 5px
+		+sm
+			text-align: center
+			margin-bottom: 20px
 	&__two-col
 		margin-bottom: 80px
+		+md
+			margin-bottom: 50px
+		+sm
+			margin-bottom: 25px
 .prod-main-slider
 	margin-bottom: 19px
 	font-size: 0
@@ -34,6 +61,10 @@
 .prod-nav-slider
 	font-size: 0
 	margin-bottom: 60px
+	+m
+		margin-bottom: 40px
+	+sm
+		margin-bottom: 25px
 	&__slide
 		width: 67px
 		height: 64px
@@ -49,6 +80,8 @@
 .prod-rating
 	margin-bottom: 50px
 	font-size: 0
+	+md
+		margin-bottom: 20px
 	&__count, &__text
 		display: inline-block
 		vertical-align: top
@@ -68,20 +101,39 @@
 	max-width: 555px
 	&__text
 		margin-bottom: 17px
+		+md
+			margin-bottom: 10px
 	&__line
 		font-size: 0
 		padding-top: 6px
+		+sm
+			text-align: center
 		&--btn
 			text-align: right
+			+m
+				max-width: 449px
+			+sm
+				max-width: 100%
+				
+				padding-top: 20px
+
 		.prod-form__block
 			&:last-of-type
 				margin-right: 0
+				+sm
+					margin-right: 15px
 	&__block
 		width: 164px
 		display: inline-block
 		vertical-align: top
 		margin-right: 30px
 		margin-bottom: 33px
+		+m
+			width: 140px
+			margin-right: 15px
+		+xs
+			margin: 0 15px 15px
+
 		label
 			display: block
 			height: 55px
@@ -100,6 +152,8 @@
 			display: inline-block
 			vertical-align: middle
 			font-size: 20px
+			+m
+				font-size: 16px
 		input
 			display: none
 			&:checked + label
@@ -117,26 +171,45 @@
 		border-bottom: 1px solid $blue
 		color: $blue
 		font-size: 20px
+		+m
+			font-size: 14px
 		p
 			color: $green
 .prod-lists
 	padding-top: 66px
+	+md
+		padding-top: 40px
+	+sm
+		padding-top: 25px
 	.list
 		margin-bottom: 58px
+		+sm
+			margin-bottom: 25px
 .prod-questions
 	margin-bottom: 51px
+	+m
+		margin-bottom: 35px
 	&__inner
 		padding-left: 98px
+		+md
+			padding-left: 0
 .prod-question
 	margin-bottom: 28px
+	+m
+		margin-bottom: 15px
 	&__inner
 		+clr
 	&__title
 		margin-bottom: 28px
 		padding-top: 10px
+		+sm
+			margin-bottom: 20px
 	&__text
 		p
 			margin-bottom: 15px
+		br
+			+sm
+				display: none
 	img
 		max-width: 262px
 		max-height: 328px
@@ -144,6 +217,8 @@
 		float: right
 		margin-bottom: 10px
 		margin-left: 30px
+		+sm
+			display: none
 	&--img-left
 		img
 			float: left
