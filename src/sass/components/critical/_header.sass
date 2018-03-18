@@ -3,21 +3,28 @@
 	z-index: 50
 	left: 0
 	width: 100%
-	top: 19px
+	padding-top: 19px
 	overflow: hidden
+	+trans
+	padding-bottom: 5px
 	+sm
-		top: 10px
-		position: absolute
-		left: 0
+		padding-top: 10px
+		left: 0	
 		width: 100%
+		overflow: visible
+
+	&.is-scroll
+		background: $white
 	&__inner
 		display: flex
 		+sm
-			flex-wrap: wrap
-			justify-content: center
+			display: block
+			+clr
+		// +sm
+		// 	flex-wrap: wrap
+		// 	justify-content: center
 	&__menu, &__phone
 		position: relative
-		
 		&:before
 			content: ''
 			position: absolute
@@ -33,17 +40,23 @@
 		+lg
 			padding-left: 20px
 		+sm
-			flex-basis: 100%
-			padding-left: 0
-			order: 1
-			text-align: center
+			display: none
+			position: absolute
+			top: calc(100% + 5px)
+			left: 0
+			width: 100%
+			padding: 5px 0
+			
 			margin-right: 0
+			background: $blue
+			z-index: 10
 		&:before
 			background: $blue
 			right: 0
 			+sm
 				right: -50%
 				transform: transalteX(50%)
+				display: none
 	&__menu-item
 		display: inline-block
 		vertical-align: top
@@ -54,6 +67,9 @@
 			margin-right: 25px
 		+sm
 			margin-right: 20px
+			display: block
+			margin: 0
+
 		+rmin(1023)
 			&:hover
 				a
@@ -74,6 +90,7 @@
 				padding: 10px 0
 			+sm
 				font-size: 15px
+				padding: 10px 15px
 
 			&:after
 				content: ''
@@ -94,12 +111,44 @@
 		display: block
 		+sm
 			margin-bottom: 20px
+			float: right
+			margin-bottom: 0
 		&:before
 			background: $blue
 			transform: translateX(100%)
 			right: -15px
 			+sm
 				display: none
+	&__mob-btn
+		display: none
+		float: left
+		width: 60px
+		height: 49px
+		border: 1px solid gray
+		border-radius: 5px
+		background: $white
+		position: relative
+		font-size: 0
+		&:before, &:after
+			content: ''
+		&:before, &:after, i
+			background: gray
+			width: 30px
+			height: 3px
+			position: absolute
+			left: 50%
+			transform: translateX(-50%)
+			z-index: 1
+		&:before
+			top: 10px
+		&:after
+			bottom: 10px
+		i
+			top: 22px
+			display: block
+		+sm
+			display: block
+
 
 .phone
 	color: $white

@@ -1,7 +1,7 @@
-export function isResp991() {
+export function isResp767() {
   let windowWidth = $(document).width();
 
-  if (windowWidth < 992) return true;
+  if (windowWidth < 768) return true;
   return false;
 }
 export function isResp1129() {

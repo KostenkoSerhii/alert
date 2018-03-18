@@ -31,3 +31,22 @@ $(".js-switch-btn").on("click", function(e){
 	$targetElems.addClass('is-active');
 
 });
+
+$(".js-header-mob-btn").on("click", function(e){
+	e.preventDefault();
+	let $this = $(this);
+	$(".js-header-mob-menu").slideToggle(200);
+	
+});
+
+$("body").click((e) => {
+  
+  if (!$(e.target).closest('.js-header-mob-menu, .js-header-mob-btn').length  ) {
+    if( $(document).width() < 768) {
+     	$(".js-header-mob-menu").slideUp(200);
+    };
+    // submenu.removeClass(ACTIVE);
+    // $(burger).removeClass(ACTIVE);
+   
+  }
+});
